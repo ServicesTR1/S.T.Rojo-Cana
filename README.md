@@ -1,17 +1,39 @@
 # Services Travel Rojo Cana
 
-Este repositorio contiene el sitio web de **Services Travel Rojo Cana**, una empresa dedicada al turismo en la República Dominicana.
+Bienvenido al repositorio oficial de **Services Travel Rojo Cana**, una empresa dedicada al turismo en la República Dominicana.
 
-## Contenido
+## ¿Quiénes somos?
 
-- Página HTML: `servicios_viajes_rojo_cana.html`
-- Diseño enfocado en mostrar servicios turísticos, contacto y promociones.
+**Services Travel Rojo Cana** ofrece servicios turísticos personalizados para quienes desean explorar lo mejor del Caribe. Nuestra misión es brindar experiencias inolvidables con calidad y seguridad.
 
-## Cómo ver el sitio
+## Contenido del repositorio
 
-Puedes acceder al sitio en vivo desde GitHub Pages:
-[Ver sitio web](https://serviciostr1.github.io/STRojo-Cana/servicios_viajes_rojo_cana.html)
+- Página principal: [`servicios_viajes_rojo_cana.html`](servicios_viajes_rojo_cana.html)
+- Imágenes, estilos y otros recursos incluidos en la carpeta principal.
 
+## Captura del sitio
+
+![Captura del sitio](ruta/a/una_captura.png) <!-- Puedes subir una imagen del sitio y reemplazar esta ruta -->
+
+## ¿Cómo ver el sitio en vivo?
+
+Puedes acceder a la versión publicada de nuestro sitio web desde GitHub Pages:
+
+[**Ver sitio web**](https://serviciostr1.github.io/STRojo-Cana/servicios_viajes_rojo_cana.html)
+
+## Tecnologías utilizadas
+
+- HTML5
+- CSS3
+- GitHub Pages
+
+## Contacto
+
+Para consultas, colaboraciones o sugerencias:
+
+- Correo: contacto@serviciostravelrojocana.com  
+- Instagram: [@rojocana](https://instagram.com/rojocana)  
+- WhatsApp: [+1 809-251-5727](https://wa.me/18092515727) *(haz clic para iniciar chat)*
 ---
 
 Gracias por visitar nuestro repositorio.
