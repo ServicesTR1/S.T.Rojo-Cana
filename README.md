@@ -13,7 +13,7 @@ Bienvenido al repositorio oficial de **Services Travel Rojo Cana**, una empresa 
 
 ## Captura del sitio
 
-![Captura del sitio](ruta/a/una_captura.png) <!-- Puedes subir una imagen del sitio y reemplazar esta ruta -->
+![Captura del sitio](https://github.com/ServicesTR1/S.T.Rojo-Cana/blob/main/captura.png?raw=true)<!-- Puedes subir una imagen del sitio y reemplazar esta ruta -->
 
 ## ¿Cómo ver el sitio en vivo?
 
