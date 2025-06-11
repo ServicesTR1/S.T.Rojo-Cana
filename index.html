@@ -125,3 +125,120 @@
   <p><strong>Misión:</strong> Ofrecer servicios turísticos personalizados con responsabilidad, seguridad y calidez, para que cada viaje sea memorable.</p>
 </section>
 
+<section>
+  <h2>Transfer / Transporte</h2>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="images/transfer/vehiculo1.jpg" alt="Transfer / Transporte 1"></div>
+      <div class="swiper-slide"><img src="images/transfer/vehiculo2.jpg" alt="Transfer / Transporte 2"></div>
+      <div class="swiper-slide"><img src="images/transfer/vehiculo3.jpg" alt="Transfer / Transporte 3"></div>
+      <div class="swiper-slide"><img src="images/transfer/vehiculo4.jpg" alt="Transfer / Transporte 4"></div>
+      <div class="swiper-slide"><img src="images/transfer/vehiculo5.jpg" alt="Transfer / Transporte 5"></div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<section>
+  <h2>Excursión Buggy</h2>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="images/buggy/buggy1.jpg" alt="Excursión Buggy 1"></div>
+      <div class="swiper-slide"><img src="images/buggy/buggy2.jpg" alt="Excursión Buggy 2"></div>
+      <div class="swiper-slide"><img src="images/buggy/buggy3.jpg" alt="Excursión Buggy 3"></div>
+      <div class="swiper-slide"><img src="images/buggy/buggy4.jpg" alt="Excursión Buggy 4"></div>
+      <div class="swiper-slide"><img src="images/buggy/buggy5.jpg" alt="Excursión Buggy 5"></div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<section>
+  <h2>Isla Saona</h2>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="images/saona/saona1.jpg" alt="Isla Saona 1"></div>
+      <div class="swiper-slide"><img src="images/saona/saona2.jpg" alt="Isla Saona 2"></div>
+      <div class="swiper-slide"><img src="images/saona/saona3.jpg" alt="Isla Saona 3"></div>
+      <div class="swiper-slide"><img src="images/saona/saona4.jpg" alt="Isla Saona 4"></div>
+      <div class="swiper-slide"><img src="images/saona/saona5.jpg" alt="Isla Saona 5"></div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<section>
+  <h2>Boca Chica</h2>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="images/boca_chica/boca1.jpg" alt="Boca Chica 1"></div>
+      <div class="swiper-slide"><img src="images/boca_chica/boca2.jpg" alt="Boca Chica 2"></div>
+      <div class="swiper-slide"><img src="images/boca_chica/boca3.jpg" alt="Boca Chica 3"></div>
+      <div class="swiper-slide"><img src="images/boca_chica/boca4.jpg" alt="Boca Chica 4"></div>
+      <div class="swiper-slide"><img src="images/boca_chica/boca5.jpg" alt="Boca Chica 5"></div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<section>
+  <h2>Bahía de las Águilas</h2>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="images/bahia_de_las_aguilas/bahia1.jpg" alt="Bahía de las Águilas 1"></div>
+      <div class="swiper-slide"><img src="images/bahia_de_las_aguilas/bahia2.jpg" alt="Bahía de las Águilas 2"></div>
+      <div class="swiper-slide"><img src="images/bahia_de_las_aguilas/bahia3.jpg" alt="Bahía de las Águilas 3"></div>
+      <div class="swiper-slide"><img src="images/bahia_de_las_aguilas/bahia4.jpg" alt="Bahía de las Águilas 4"></div>
+      <div class="swiper-slide"><img src="images/bahia_de_las_aguilas/bahia5.jpg" alt="Bahía de las Águilas 5"></div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<section id="reserva">
+  <h2>Reservar un Servicio</h2>
+  <form action="https://formspree.io/f/meokappv" method="POST">
+    <input type="text" name="nombre" placeholder="Tu nombre" required />
+    <input type="email" name="email" placeholder="Correo electrónico" required />
+    <input type="text" name="fecha" placeholder="Fecha del viaje" required />
+    <input type="text" name="excursion" placeholder="Servicio solicitado" />
+    <input type="number" name="personas" placeholder="Número de personas" />
+    <textarea name="mensaje" placeholder="Mensaje adicional..."></textarea>
+    <button type="submit">Enviar reserva</button>
+  </form>
+</section>
+
+<section class="contacto">
+  <h2>Contacto</h2>
+  <p><strong>WhatsApp:</strong> +1 809-251-5727</p>
+  <p><strong>Correo:</strong> servicestravelrojo@gmail.com</p>
+  <p><strong>Ubicación:</strong> <a href="https://maps.app.goo.gl/sHcJ78tLRSYq89mV6" target="_blank">Ver en Google Maps</a></p>
+  <p><strong>Instagram:</strong> <a href="https://instagram.com/st.rojocana" target="_blank">@st.rojocana</a></p>
+</section>
+
+<footer>
+  © 2025 Services Travel Rojo Cana. Todos los derechos reservados.
+</footer>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  const swipers = document.querySelectorAll('.swiper');
+  swipers.forEach(container => {
+    new Swiper(container, {
+      loop: true,
+      pagination: {
+        el: container.querySelector('.swiper-pagination'),
+        clickable: true
+      },
+      spaceBetween: 20
+    });
+  });
+</script>
+
+</body>
+</html>
