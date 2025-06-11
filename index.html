@@ -6,6 +6,7 @@
   <title>Services Travel Rojo Cana</title>
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <style>
+    html { scroll-behavior: smooth; }
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -48,6 +49,7 @@
     .btn.whatsapp { background-color: #25d366; }
     .btn.reserva { background-color: #007bff; }
     .btn.pago { background-color: #28a745; }
+
     section {
       max-width: 960px;
       margin: 40px auto;
@@ -56,6 +58,17 @@
     section h2 {
       text-align: center;
       margin-bottom: 20px;
+    }
+    .swiper {
+      width: 100%;
+      padding-bottom: 30px;
+    }
+    .swiper-slide {
+      text-align: center;
+    }
+    .swiper-slide img {
+      width: 90%;
+      border-radius: 10px;
     }
     form {
       background-color: #fff;
@@ -106,30 +119,9 @@
   </div>
 </header>
 
-<section id="reserva">
-  <h2>Reservar una Excursión</h2>
-  <form action="https://formspree.io/f/meokappv" method="POST">
-    <input type="text" name="nombre" placeholder="Tu nombre" required />
-    <input type="email" name="email" placeholder="Correo electrónico" required />
-    <input type="text" name="fecha" placeholder="Fecha del viaje" required />
-    <input type="text" name="excursion" placeholder="Excursión deseada" />
-    <input type="number" name="personas" placeholder="Número de personas" />
-    <textarea name="mensaje" placeholder="Mensaje adicional..."></textarea>
-    <button type="submit">Enviar reserva</button>
-  </form>
+<section>
+  <h2>Visión y Misión</h2>
+  <p><strong>Visión:</strong> Ser la empresa turística preferida por su calidad, compromiso y experiencias inolvidables en toda la República Dominicana.</p>
+  <p><strong>Misión:</strong> Ofrecer servicios turísticos personalizados con responsabilidad, seguridad y calidez, para que cada viaje sea memorable.</p>
 </section>
 
-<section class="contacto">
-  <h2>Contacto</h2>
-  <p><strong>WhatsApp:</strong> +1 809-251-5727</p>
-  <p><strong>Correo:</strong> servicestravelrojo@gmail.com</p>
-  <p><strong>Ubicación:</strong> <a href="https://maps.app.goo.gl/sHcJ78tLRSYq89mV6" target="_blank">Ver en Google Maps</a></p>
-  <p><strong>Instagram:</strong> <a href="https://instagram.com/st.rojocana" target="_blank">@st.rojocana</a></p>
-</section>
-
-<footer>
-  © 2025 Services Travel Rojo Cana. Todos los derechos reservados.
-</footer>
-
-</body>
-</html>
