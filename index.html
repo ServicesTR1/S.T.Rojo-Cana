@@ -1,1 +1,103 @@
-<!-- Archivo reconstruido para descarga correcta -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services Travel Rojo Cana</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      background: url('images/otros/fondo.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+    header {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
+    }
+    .frase-extra {
+      font-size: 1em;
+      color: #333;
+      margin-top: 10px;
+    }
+    .formulario {
+      background: rgba(255,255,255,0.95);
+      max-width: 500px;
+      margin: 40px auto;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    input, textarea {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .boton {
+      background: #e63946;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      width: 100%;
+    }
+    #lang-switch {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="lang-switch">
+    <button onclick="setLang('es')">ES</button>
+    <button onclick="setLang('en')">EN</button>
+  </div>
+  <header>
+    <img src="images/logo/logo.png" alt="Logo" style="height:80px;"><br>
+    <h1 id="eslogan">“Sólo piénsalo… y nosotros te llevamos.”</h1>
+    <div class="frase-extra" id="frase">Explora con Pasión, Vive Rojo Cana</div>
+  </header>
+
+  <div class="formulario">
+    <h2 id="formTitulo">Reserva tu servicio</h2>
+    <form action="https://formspree.io/f/xayrvjlk" method="POST">
+      <input type="text" name="nombre" placeholder="Nombre" required />
+      <input type="text" name="servicio" placeholder="Servicio solicitado" required />
+      <textarea name="mensaje" placeholder="Mensaje" rows="4"></textarea>
+      <button type="submit" class="boton" id="enviarBtn">Enviar</button>
+    </form>
+  </div>
+
+  <script>
+    const textos = {
+      es: {
+        eslogan: "“Sólo piénsalo… y nosotros te llevamos.”",
+        frase: "Explora con Pasión, Vive Rojo Cana",
+        formTitulo: "Reserva tu servicio",
+        enviarBtn: "Enviar"
+      },
+      en: {
+        eslogan: "“Just think about it… and we’ll take you there.”",
+        frase: "Explore with Passion, Live Rojo Cana",
+        formTitulo: "Book your service",
+        enviarBtn: "Send"
+      }
+    };
+
+    function setLang(lang) {
+      document.getElementById("eslogan").innerText = textos[lang].eslogan;
+      document.getElementById("frase").innerText = textos[lang].frase;
+      document.getElementById("formTitulo").innerText = textos[lang].formTitulo;
+      document.getElementById("enviarBtn").innerText = textos[lang].enviarBtn;
+    }
+  </script>
+</body>
+</html>
