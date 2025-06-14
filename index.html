@@ -6,55 +6,113 @@
   <title>Services Travel Rojo Cana</title>
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <style>
-    html {{ scroll-behavior: smooth; }}
-    body {{ margin: 0; font-family: Arial, sans-serif; background: #f0f0f0; color: #222; }}
-    header {{
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      color: #222;
+    }
+    header {
       background: url('images/otros/fondo.jpg') center/cover no-repeat;
-      color: white; text-align: center; padding: 40px 20px; position: relative;
-    }}
-    .language-switch {{
-      position: absolute; top: 20px; right: 20px;
-    }}
-    .language-switch a {{
-      color: white; text-decoration: none; margin: 0 5px;
-      font-weight: bold; background: rgba(0,0,0,0.3); padding: 5px 10px; border-radius: 10px;
-    }}
-    header img {{ max-width: 120px; }}
-    header h1 {{ font-size: 2.5rem; margin: 10px 0 5px; }}
-    header p {{ margin: 5px 0; font-size: 1.1rem; }}
-    .btn-container {{ margin-top: 20px; }}
-    .btn {{
-      display: inline-block; margin: 10px; padding: 12px 20px;
-      border-radius: 25px; color: white; text-decoration: none; font-weight: bold;
-    }}
-    .btn.whatsapp {{ background-color: #25d366; }}
-    .btn.reserva {{ background-color: #007bff; }}
-    .btn.pago {{ background-color: #28a745; }}
-
-    section {{ max-width: 960px; margin: 40px auto; padding: 0 20px; }}
-    section h2 {{ text-align: center; margin-bottom: 20px; }}
-    .swiper {{ width: 100%; padding-bottom: 30px; }}
-    .swiper-slide {{ text-align: center; }}
-    .swiper-slide img {{ width: 90%; border-radius: 10px; }}
-    form {{
-      background: #ffffff; padding: 20px; border-radius: 10px;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      position: relative;
+    }
+    .language-switch {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    .language-switch a {
+      color: white;
+      text-decoration: none;
+      margin: 0 5px;
+      font-weight: bold;
+      background: rgba(0,0,0,0.3);
+      padding: 5px 10px;
+      border-radius: 10px;
+    }
+    header img {
+      max-width: 120px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 10px 0 5px;
+    }
+    header p {
+      margin: 5px 0;
+      font-size: 1.1rem;
+    }
+    .btn-container {
+      margin-top: 20px;
+    }
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 20px;
+      border-radius: 25px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .btn.whatsapp { background-color: #25d366; }
+    .btn.reserva { background-color: #007bff; }
+    .btn.pago { background-color: #28a745; }section {
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .swiper {
+      width: 100%;
+      padding-bottom: 30px;
+    }
+    .swiper-slide {
+      text-align: center;
+    }
+    .swiper-slide img {
+      width: 90%;
+      border-radius: 10px;
+    }
+    form {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }}
-    form input, form textarea {{
-      width: 100%; margin-bottom: 15px; padding: 10px;
-      border: 1px solid #ccc; border-radius: 5px;
-    }}
-    form button {{
-      background: #007bff; color: white; padding: 10px 20px;
-      border: none; border-radius: 5px; cursor: pointer;
-    }}
-    .contacto {{
-      background: #f9f9f9; padding: 20px; border-radius: 8px; margin-top: 30px;
-    }}
-    footer {{
-      background: #111; color: white; text-align: center;
-      padding: 20px; margin-top: 40px;
-    }}
+    }
+    form input, form textarea {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      background: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .contacto {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 30px;
+    }
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
   </style>
 </head>
 <body>
@@ -78,12 +136,69 @@
   <h2>Visión y Misión</h2>
   <p><strong>Visión:</strong> Ser la empresa turística preferida por su calidad, compromiso y experiencias inolvidables en toda la República Dominicana.</p>
   <p><strong>Misión:</strong> Ofrecer servicios turísticos personalizados con responsabilidad, seguridad y calidez, para que cada viaje sea memorable.</p>
+</section><section>
+  <h2>Transfer / Transporte</h2>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="images/transfer/vehiculo1.jpg" alt="Transfer 1"></div>
+      <div class="swiper-slide"><img src="images/transfer/vehiculo2.jpg" alt="Transfer 2"></div>
+      <div class="swiper-slide"><img src="images/transfer/vehiculo3.jpg" alt="Transfer 3"></div>
+      <div class="swiper-slide"><img src="images/transfer/vehiculo4.jpg" alt="Transfer 4"></div>
+      <div class="swiper-slide"><img src="images/transfer/vehiculo5.jpg" alt="Transfer 5"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
 </section>
 
-<!-- Galerías por sección -->
-{AQUÍ VA EL BLOQUE DE CADA CARRUSEL - Te lo puedo dar en la siguiente respuesta}
+<section>
+  <h2>Excursión Buggy</h2>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="images/buggy/buggy1.jpg" alt="Buggy 1"></div>
+      <div class="swiper-slide"><img src="images/buggy/buggy2.jpg" alt="Buggy 2"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
 
-<section id="reserva">
+<section>
+  <h2>Isla Saona</h2>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="images/saona/saona1.jpg" alt="Saona 1"></div>
+      <div class="swiper-slide"><img src="images/saona/saona2.jpg" alt="Saona 2"></div>
+      <div class="swiper-slide"><img src="images/saona/saona3.jpg" alt="Saona 3"></div>
+      <div class="swiper-slide"><img src="images/saona/saona4.jpg" alt="Saona 4"></div>
+      <div class="swiper-slide"><img src="images/saona/saona5.jpg" alt="Saona 5"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<section>
+  <h2>Boca Chica</h2>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="images/boca_chica/boca1.jpg" alt="Boca 1"></div>
+      <div class="swiper-slide"><img src="images/boca_chica/boca2.jpg" alt="Boca 2"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<section>
+  <h2>Bahía de las Águilas</h2>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="images/bahia_de_las_aguilas/bahia1.jpg" alt="Bahía 1"></div>
+      <div class="swiper-slide"><img src="images/bahia_de_las_aguilas/bahia2.jpg" alt="Bahía 2"></div>
+      <div class="swiper-slide"><img src="images/bahia_de_las_aguilas/bahia3.jpg" alt="Bahía 3"></div>
+      <div class="swiper-slide"><img src="images/bahia_de_las_aguilas/bahia4.jpg" alt="Bahía 4"></div>
+      <div class="swiper-slide"><img src="images/bahia_de_las_aguilas/bahia5.jpg" alt="Bahía 5"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section><section id="reserva">
   <h2>Reservar un Servicio</h2>
   <form action="https://formspree.io/f/meokappv" method="POST">
     <input type="text" name="nombre" placeholder="Tu nombre" required />
@@ -111,16 +226,16 @@
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script>
   const swipers = document.querySelectorAll('.swiper');
-  swipers.forEach(container => {{
-    new Swiper(container, {{
+  swipers.forEach(container => {
+    new Swiper(container, {
       loop: true,
-      pagination: {{
+      pagination: {
         el: container.querySelector('.swiper-pagination'),
         clickable: true
-      }},
+      },
       spaceBetween: 20
-    }});
-  }});
+    });
+  });
 </script>
 
 </body>
