@@ -1,24 +1,84 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Transportation from airports, tours like Saona Island, buggy adventures and more with Services Travel Rojo Cana in the Dominican Republic.">
-  <meta name="keywords" content="airport transfer, tours in DR, buggy in Punta Cana, excursions Dominican Republic, Saona Island, Services Travel Rojo Cana">
-  <meta name="author" content="Services Travel Rojo Cana">
-  <title>Services Travel Rojo Cana - Transportation, Tours and Excursions in the DR</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services Travel Rojo Cana transportation, tours and excursions in DR</title>
+  <meta name="description" content="Transportation, tours and excursions in the Dominican Republic with Services Travel Rojo Cana. Just think about it... and we’ll take you there.">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <header>
-    <img src="images/otros/logo.png" alt="Services Travel Rojo Cana Logo" />
+<body style="margin:0; font-family: Arial, sans-serif; background:url('images/otros/fondo.jpg') no-repeat center center/cover;">
+
+  <!-- Header -->
+  <header style="background:rgba(0,0,0,0.5); color:white; text-align:center; padding:40px 20px;">
+    <img src="images/otros/logo.png" alt="Rojo Cana Logo" style="max-width:150px;">
     <h1>Explore with Passion, Live Rojo Cana</h1>
-    <p><strong>Just think about it... and we’ll take you there.</strong></p>
+    <h2>Just think about it… and we’ll take you there.</h2>
   </header>
-  <!-- Secciones omitidas por brevedad -->
-  <footer>
-    <p>&copy; 2025 Services Travel Rojo Cana. All rights reserved.</p>
+
+  <!-- Quick buttons -->
+  <div style="text-align:center; margin:20px;">
+    <a href="https://wa.me/18092515727" style="background:#25D366; color:white; padding:10px 20px; text-decoration:none; border-radius:8px; margin:5px;">WhatsApp</a>
+    <a href="#formulario" style="background:#007BFF; color:white; padding:10px 20px; text-decoration:none; border-radius:8px; margin:5px;">Book Now</a>
+    <a href="pago.html" style="background:#FF0000; color:white; padding:10px 20px; text-decoration:none; border-radius:8px; margin:5px;">Pay</a>
+  </div>
+
+  <!-- Sections with carousels -->
+  <section>
+    <h2 style="text-align:center;">Transfer</h2>
+    <div class="carousel">
+      <img src="images/transfer/1.jpg" alt="Transfer 1">
+      <img src="images/transfer/2.jpg" alt="Transfer 2">
+    </div>
+  </section>
+
+  <section>
+    <h2 style="text-align:center;">Buggy</h2>
+    <div class="carousel">
+      <img src="images/buggy/1.jpg" alt="Buggy 1">
+      <img src="images/buggy/2.jpg" alt="Buggy 2">
+    </div>
+  </section>
+
+  <section>
+    <h2 style="text-align:center;">Saona</h2>
+    <div class="carousel">
+      <img src="images/saona/1.jpg" alt="Saona 1">
+      <img src="images/saona/2.jpg" alt="Saona 2">
+    </div>
+  </section>
+
+  <!-- Vision and Mission -->
+  <section style="padding:40px; background:rgba(255,255,255,0.9);">
+    <h2>Our Vision</h2>
+    <p>To be the most reliable and preferred transportation and excursions company for tourists in the Dominican Republic.</p>
+    <h2>Our Mission</h2>
+    <p>To provide safe, comfortable, and memorable experiences for every client, with quality and professionalism.</p>
+  </section>
+
+  <!-- Booking form -->
+  <section id="formulario" style="padding:40px; background:rgba(0,0,0,0.7); color:white;">
+    <h2>Book Your Service</h2>
+    <form action="https://formspree.io/f/yourformid" method="POST" style="max-width:400px; margin:auto;">
+      <label>Name:</label><br>
+      <input type="text" name="name" required style="width:100%; padding:8px; margin:5px 0;"><br>
+      <label>Email:</label><br>
+      <input type="email" name="email" required style="width:100%; padding:8px; margin:5px 0;"><br>
+      <label>Phone:</label><br>
+      <input type="tel" name="phone" required style="width:100%; padding:8px; margin:5px 0;"><br>
+      <label>Requested service:</label><br>
+      <input type="text" name="service" required style="width:100%; padding:8px; margin:5px 0;"><br>
+      <label>Message:</label><br>
+      <textarea name="message" rows="4" style="width:100%; padding:8px; margin:5px 0;"></textarea><br>
+      <button type="submit" style="background:red; color:white; padding:10px 20px; border:none; border-radius:8px;">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer style="text-align:center; padding:20px; background:#333; color:white;">
+    <p>© 2025 Services Travel Rojo Cana</p>
+    <a href="https://instagram.com/st.rojocana" style="color:white;">Instagram</a>
   </footer>
+
 </body>
 </html>
