@@ -1,88 +1,86 @@
-body {
+/* ====== ESTILOS GENERALES ====== */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: Arial, sans-serif;
-  background: url("images/otros/fondo.jpg") no-repeat center center/cover;
+  background: url("images/otros/fondo.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  line-height: 1.6;
 }
 
-/* Botón idioma */
-.idioma {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-.idioma a {
-  background: white;
-  padding: 5px 10px;
-  border-radius: 6px;
-  text-decoration: none;
-  color: black;
-}
-
+/* ====== HEADER ====== */
 header {
-  background: rgba(0,0,0,0.5);
-  color: white;
-  text-align: center;
-  padding: 40px 20px;
-}
-header .logo {
-  max-width: 150px;
-}
-.botones {
-  text-align: center;
-  margin: 20px;
-}
-.btn {
-  padding: 10px 20px;
-  margin: 5px;
-  border-radius: 8px;
-  text-decoration: none;
-  color: white;
-}
-.whatsapp { background: #25D366; }
-.reservar { background: #007BFF; }
-.pagar { background: #FF0000; }
-
-.carousel {
-  display: flex;
-  overflow-x: auto;
-  gap: 10px;
-  padding: 10px;
-}
-.carousel img {
-  max-height: 200px;
-  border-radius: 10px;
-}
-
-.vision-mision {
-  background: rgba(255,255,255,0.9);
-  padding: 40px;
-}
-
-#formulario {
-  background: rgba(0,0,0,0.7);
-  color: white;
-  padding: 40px;
-}
-#formulario input, #formulario textarea {
-  width: 100%;
-  padding: 8px;
-  margin: 5px 0;
-  border-radius: 6px;
-  border: none;
-}
-#formulario button {
-  background: red;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-footer {
-  background: #333;
-  color: white;
   text-align: center;
   padding: 20px;
+  background: rgba(0,0,0,0.6);
+  color: white;
 }
-footer a { color: white; }
+
+header img {
+  max-height: 80px;
+  margin-bottom: 10px;
+}
+
+header h1 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+header p {
+  font-size: 16px;
+  font-style: italic;
+}
+
+/* ====== TITULOS ====== */
+h2 {
+  text-align: center;
+  margin: 40px 0 20px;
+  font-size: 22px;
+  color: #c00; /* rojo */
+}
+
+/* ====== CAROUSEL ====== */
+.carousel {
+  width: 90%;
+  margin: auto;
+}
+
+.carousel img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* ====== BOTONES DE SLIDER ====== */
+.slick-prev:before,
+.slick-next:before {
+  color: #c00; /* rojo */
+  font-size: 28px;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #007bff; /* azul */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #28a745; /* verde */
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 18px;
+  }
+  header p {
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+}
