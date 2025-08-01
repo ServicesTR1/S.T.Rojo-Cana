@@ -4,54 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Services Travel Rojo Cana transporte, tours y excursiones en RD</title>
+  <meta name="description" content="Transporte, tours y excursiones en toda República Dominicana con Services Travel Rojo Cana. Sólo piénsalo... y nosotros te llevamos.">
+  <meta name="keywords" content="transporte aeropuerto, excursiones República Dominicana, tours Punta Cana, Rojo Cana, Saona, Buggy, Bahía de las Águilas">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="favicon.ico">
 
   <!-- Slick Carousel CSS -->
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-  
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: url("images/otros/fondo.jpg") no-repeat center center fixed;
-      background-size: cover;
-    }
-    header {
-      text-align: center;
-      padding: 20px;
-      background: rgba(0,0,0,0.5);
-      color: white;
-    }
-    header img {
-      max-height: 80px;
-      margin-bottom: 10px;
-    }
-    .carousel img {
-      width: 100%;
-      border-radius: 10px;
-    }
-    h2 {
-      text-align: center;
-      margin: 40px 0 20px;
-      color: #fff;
-    }
-    .section {
-      margin: 20px;
-      background: rgba(255,255,255,0.9);
-      padding: 15px;
-      border-radius: 10px;
-    }
-  </style>
 </head>
 <body>
 
+  <!-- Encabezado -->
   <header>
     <img src="images/otros/logo.png" alt="Logo Rojo Cana">
     <h1>Explora con Pasión, Vive Rojo Cana</h1>
     <p>Sólo piénsalo... y nosotros te llevamos.</p>
+    <a href="index_en.html" style="color:#fff; text-decoration:underline;">English</a>
   </header>
+
+  <!-- Botón WhatsApp -->
+  <div style="position:fixed; bottom:20px; right:20px; z-index:1000;">
+    <a href="https://wa.me/18092515727" target="_blank">
+      <img src="https://img.icons8.com/color/70/whatsapp.png" alt="WhatsApp">
+    </a>
+  </div>
 
   <!-- Transfer -->
   <h2>Transfer</h2>
@@ -103,7 +80,31 @@
     <div><img src="images/bahia_de_las_aguilas/bahia5.jpg" alt="Bahía 5"></div>
   </div>
 
-  <!-- Scripts de Slick Carousel -->
+  <!-- Visión y Misión -->
+  <section class="section">
+    <h2>Visión</h2>
+    <p>Ser la empresa de transporte y excursiones más confiable de República Dominicana, brindando experiencias inolvidables a nuestros clientes.</p>
+    <h2>Misión</h2>
+    <p>Ofrecer un servicio seguro, puntual y personalizado que conecte a los turistas con la belleza natural y cultural de nuestro país.</p>
+  </section>
+
+  <!-- Formulario -->
+  <section class="section">
+    <h2>Reservar</h2>
+    <form action="mailto:servicestravelrojo@gmail.com" method="POST">
+      <label for="name">Nombre:</label><br>
+      <input type="text" id="name" name="name" required><br>
+      <label for="phone">Teléfono:</label><br>
+      <input type="tel" id="phone" name="phone" required><br>
+      <label for="service">Servicio solicitado:</label><br>
+      <input type="text" id="service" name="service" required><br>
+      <label for="date">Fecha:</label><br>
+      <input type="date" id="date" name="date" required><br>
+      <input type="submit" value="Enviar">
+    </form>
+  </section>
+
+  <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script>
@@ -117,4 +118,4 @@
     });
   </script>
 </body>
-                                                                           </html>
+</html>
