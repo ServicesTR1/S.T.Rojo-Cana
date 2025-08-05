@@ -6,109 +6,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Services Travel Rojo Cana</title>
   <style>
-    body {
-      font-family: sans-serif;
-      margin: 0;
-      background: url('images/otros/fondo.jpg') no-repeat center center fixed;
-      background-size: cover;
-    }
-    header {
-      background: rgba(255, 255, 255, 0.9);
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 1.8em;
-    }
-    .frase-extra {
-      font-size: 1em;
-      color: #333;
-      margin-top: 10px;
-    }
-    .formulario {
-      background: rgba(255,255,255,0.9);
-      max-width: 500px;
-      margin: 40px auto;
-      padding: 20px;
-      border-radius: 10px;
-    }
-    input, textarea {
-      width: 100%;
-      margin-bottom: 15px;
-      padding: 10px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
-    .boton {
-      background: #e63946;
-      color: white;
-      padding: 10px;
-      border: none;
-      border-radius: 5px;
-      width: 100%;
-    }
-    #lang-switch {
-      position: absolute;
-      top: 10px;
-      right: 20px;
-    }
+    body { font-family: Arial, sans-serif; margin: 0; background: #fff; }
+    header { background: #c00; color: white; padding: 2rem; text-align: center; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; padding: 1rem; }
+    .gallery img { width: 100%; border-radius: 10px; object-fit: cover; height: 200px; }
+    section { padding: 1rem 2rem; }
+    h2 { color: #c00; }
+    #whatsapp { position: fixed; bottom: 20px; right: 20px; z-index: 1000; }
+    #whatsapp a { background: #25d366; padding: 10px 20px; color: white; border-radius: 50px; text-decoration: none; font-weight: bold; }
   </style>
 </head>
 <body>
-  <div id="lang-switch">
-    <button onclick="setLang('es')">ES</button>
-    <button onclick="setLang('en')">EN</button>
-  </div>
   <header>
-    <img src="images/logo.png" alt="Logo" style="height:80px;"><br>
-    <h1 id="eslogan">“Sólo piénsalo… y nosotros te llevamos.”</h1>
-    <div class="frase-extra" id="frase">Explora con Pasión, Vive Rojo Cana</div>
+    <img src="images/logo.png" alt="Logo" width="120">
+    <h1>Services Travel Rojo Cana</h1>
+    <p>Transfers y excursiones en toda República Dominicana</p>
   </header>
 
-  <div class="formulario">
-    <h2 id="formTitulo">Reserva tu servicio</h2>
-    <form onsubmit="enviar(); return false;">
-      <input type="text" id="nombre" placeholder="Nombre" required />
-      <input type="text" id="servicio" placeholder="Servicio solicitado" required />
-      <textarea id="mensaje" placeholder="Mensaje" rows="4"></textarea>
-      <button type="submit" class="boton" id="enviarBtn">Enviar</button>
-    </form>
+  <section>
+    <h2>Galería</h2>
+    <div class="gallery">
+      <img src="images/vehiculo1.jpg" alt="Vehículo Ejecutivo">
+      <img src="images/vehiculo2.jpg" alt="Vehículo Privado">
+      <img src="images/vehiculo3.jpg" alt="Van para grupos">
+      <img src="images/vehiculo4.jpg" alt="Mini bus">
+      <img src="images/vehiculos_grupo.jpg" alt="Buses y vans">
+      <img src="images/boggy1.jpg" alt="Boggy Aventura">
+      <img src="images/boggy2.jpg" alt="Boggy Grupo">
+      <img src="images/catamaran.jpg" alt="Catamarán">
+      <img src="images/saona1.jpg" alt="Isla Saona Vista Aérea">
+      <img src="images/saona2.jpg" alt="Isla Saona">
+      <img src="images/saona3.jpg" alt="Saona Playa">
+      <img src="images/boca_chica1.jpg" alt="Boca Chica Playa">
+      <img src="images/comida_boca_chica.jpg" alt="Comida típica Boca Chica">
+      <img src="images/bahia1.jpg" alt="Bahía de las Águilas Playa">
+      <img src="images/bahia2.jpg" alt="Bahía de las Águilas Acantilado">
+      <img src="images/playa1.jpg" alt="Playa Local">
+      <img src="images/montana1.jpg" alt="Vista de Montaña">
+      <img src="images/laguna.jpg" alt="Laguna Natural">
+      <img src="images/panoramica.jpg" alt="Panorámica">
+      <img src="images/piscina.jpg" alt="Piscina Natural">
+    </div>
+  </section>
+
+  <section>
+    <h2>Excursiones Disponibles</h2>
+    <ul>
+      <li>Isla Saona (catamarán, degustaciones y más)</li>
+      <li>Tour en Boggy</li>
+      <li>Boca Chica</li>
+      <li>Bahía de las Águilas</li>
+      <li>Safari y turismo en todo el país</li>
+    </ul>
+  </section>
+
+  <div id="whatsapp">
+    <a href="https://wa.me/18092515727" target="_blank">Contáctanos en WhatsApp</a>
   </div>
-
-  <script>
-    const textos = {
-      es: {
-        eslogan: "“Sólo piénsalo… y nosotros te llevamos.”",
-        frase: "Explora con Pasión, Vive Rojo Cana",
-        formTitulo: "Reserva tu servicio",
-        enviarBtn: "Enviar"
-      },
-      en: {
-        eslogan: "“Just think about it… and we’ll take you there.”",
-        frase: "Explore with Passion, Live Rojo Cana",
-        formTitulo: "Book your service",
-        enviarBtn: "Send"
-      }
-    };
-
-    function setLang(lang) {
-      document.getElementById("eslogan").innerText = textos[lang].eslogan;
-      document.getElementById("frase").innerText = textos[lang].frase;
-      document.getElementById("formTitulo").innerText = textos[lang].formTitulo;
-      document.getElementById("enviarBtn").innerText = textos[lang].enviarBtn;
-    }
-
-    function enviar() {
-      const nombre = document.getElementById("nombre").value;
-      const servicio = document.getElementById("servicio").value;
-      const mensaje = document.getElementById("mensaje").value;
-      const texto = `Nombre: ${nombre}%0AServicio: ${servicio}%0AMensaje: ${mensaje}`;
-      const wa = `https://wa.me/18092515727?text=${texto}`;
-      window.open(wa, '_blank');
-      const mailto = `mailto:servicestravelrojo@gmail.com?subject=Reserva STRC&body=${texto}`;
-      window.open(mailto, '_blank');
-    }
-  </script>
 </body>
 </html>
