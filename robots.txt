@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rojocana.com/sitemap.xml
+Sitemap: https://YOUR_DOMAIN/sitemap.xml
