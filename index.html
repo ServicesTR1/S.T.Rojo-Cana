@@ -1,180 +1,126 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Services Travel Rojo Cana transporte, tours y excursiones en RD</title>
-  <meta name="description" content="Explora con Pasión — Transporte, tours y excursiones en República Dominicana. Transfers, Isla Saona, buggy tours y más.">
-  <meta name="keywords" content="transporte aeropuerto, tours RD, isla Saona, buggy Punta Cana, transfer Santo Domingo">
-  <link rel="alternate" href="https://rojocana.com/index.html" hreflang="es" />
-  <link rel="alternate" href="https://rojocana.com/index_en.html" hreflang="en" />
-
-  <!-- Open Graph / Twitter -->
-  <meta property="og:title" content="Services Travel Rojo Cana - Transporte y excursiones en RD">
-  <meta property="og:description" content="Explora con Pasión — Transfers, Isla Saona, buggy tours y más. Reserva fácil por WhatsApp.">
-  <meta property="og:image" content="https://rojocana.com/images/otros/logo.png">
-  <meta property="og:url" content="https://rojocana.com/index.html">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-
-  <link rel="icon" href="favicon.ico">
-  <link rel="stylesheet" href="style.css">
-
-  <!-- Slick Carousel CSS -->
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Services Travel Rojo Cana ofrece transporte, tours y excursiones en República Dominicana. Sólo piénsalo... y nosotros te llevamos.">
+    <meta name="keywords" content="transporte, tours, excursiones, República Dominicana, Punta Cana, Saona, buggy, Rojo Cana">
+    <meta name="author" content="Services Travel Rojo Cana">
+    <title>Services Travel Rojo Cana transporte, tours y excursiones en RD</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/otros/logo.png" type="image/png">
 </head>
 <body>
 
-<header class="site-header">
-  <div class="wrap header-inner">
-    <img src="images/otros/logo.png" alt="Logo Rojo Cana" class="logo">
-    <div class="head-text">
-      <h1>Explora con Pasión, Vive Rojo Cana</h1>
-      <p class="tag">Sólo piénsalo… y nosotros te llevamos.</p>
-    </div>
-    <nav class="lang-switch"><a href="index_en.html">EN</a></nav>
-  </div>
-</header>
+    <!-- Portada -->
+    <header class="hero" style="background-image: url('images/otros/fondo.jpg');">
+        <div class="overlay">
+            <img src="images/otros/logo.png" alt="Logo" class="logo">
+            <h1>Explora con Pasión, Vive Rojo Cana</h1>
+            <p>Sólo piénsalo… y nosotros te llevamos.</p>
+            <div class="hero-buttons">
+                <a href="#formulario" class="btn-reservar">Reservar</a>
+                <a href="https://api.whatsapp.com/send?phone=18092515727&text=Hola%20quiero%20más%20información" target="_blank" class="btn-whatsapp">WhatsApp</a>
+            </div>
+        </div>
+    </header>
 
-<!-- Quick actions -->
-<section class="quick-actions wrap">
-  <a class="btn whatsapp" id="wa-btn-es" href="https://wa.me/18092515727?text=Hola%2C%20quiero%20reservar%20un%20servicio" target="_blank">WhatsApp</a>
-  <a class="btn reservar" href="#formulario">Reservar</a>
-  <a class="btn pagar" href="pago.html">Pagar</a>
-</section>
+    <!-- Carruseles -->
+    <section class="galeria">
+        <h2>Transporte</h2>
+        <div class="carousel">
+            <img src="images/transfer/transfer1.jpg" alt="">
+            <img src="images/transfer/transfer2.jpg" alt="">
+            <img src="images/transfer/transfer3.jpg" alt="">
+        </div>
 
-<main class="wrap">
+        <h2>Buggy</h2>
+        <div class="carousel">
+            <img src="images/buggy/buggy1.jpg" alt="">
+            <img src="images/buggy/buggy2.jpg" alt="">
+            <img src="images/buggy/buggy3.jpg" alt="">
+        </div>
 
-  <!-- Transfer -->
-  <section class="section">
-    <h2>Transfer</h2>
-    <div class="carousel transfer-carousel">
-      <div><img src="images/transfer/transfer1.jpg" alt="Transfer 1"></div>
-      <div><img src="images/transfer/transfer2.jpg" alt="Transfer 2"></div>
-      <div><img src="images/transfer/transfer3.jpg" alt="Transfer 3"></div>
-      <div><img src="images/transfer/transfer4.jpg" alt="Transfer 4"></div>
-      <div><img src="images/transfer/transfer5.jpg" alt="Transfer 5"></div>
-    </div>
-  </section>
+        <h2>Isla Saona</h2>
+        <div class="carousel">
+            <img src="images/saona/saona1.jpg" alt="">
+            <img src="images/saona/saona2.jpg" alt="">
+            <img src="images/saona/saona3.jpg" alt="">
+        </div>
+    </section>
 
-  <!-- Buggy -->
-  <section class="section">
-    <h2>Buggy</h2>
-    <div class="carousel buggy-carousel">
-      <div><img src="images/buggy/buggy1.jpg" alt="Buggy 1"></div>
-      <div><img src="images/buggy/buggy2.jpg" alt="Buggy 2"></div>
-      <div><img src="images/buggy/buggy3.jpg" alt="Buggy 3"></div>
-      <div><img src="images/buggy/buggy4.jpg" alt="Buggy 4"></div>
-      <div><img src="images/buggy/buggy5.jpg" alt="Buggy 5"></div>
-    </div>
-  </section>
+    <!-- Misión y Visión -->
+    <section class="mision-vision">
+        <div>
+            <h2>Misión</h2>
+            <p>Ofrecer transporte y experiencias turísticas seguras, cómodas y memorables en toda la República Dominicana.</p>
+        </div>
+        <div>
+            <h2>Visión</h2>
+            <p>Ser la empresa líder en transporte y excursiones, reconocida por su excelencia y trato personalizado.</p>
+        </div>
+    </section>
 
-  <!-- Saona -->
-  <section class="section">
-    <h2>Isla Saona</h2>
-    <div class="carousel saona-carousel">
-      <div><img src="images/saona/saona1.jpg" alt="Saona 1"></div>
-      <div><img src="images/saona/saona2.jpg" alt="Saona 2"></div>
-      <div><img src="images/saona/saona3.jpg" alt="Saona 3"></div>
-      <div><img src="images/saona/saona4.jpg" alt="Saona 4"></div>
-      <div><img src="images/saona/saona5.jpg" alt="Saona 5"></div>
-    </div>
-  </section>
+    <!-- Formulario -->
+    <section id="formulario" class="form-section">
+        <h2>Reservar Ahora</h2>
+        <form action="https://formspree.io/f/tuformid" method="POST">
+            <label>Nombre:</label>
+            <input type="text" name="nombre" required>
+            
+            <label>Teléfono:</label>
+            <input type="tel" name="telefono" required>
 
-  <!-- Boca Chica -->
-  <section class="section">
-    <h2>Boca Chica</h2>
-    <div class="carousel boca-carousel">
-      <div><img src="images/boca_chica/boca1.jpg" alt="Boca Chica 1"></div>
-      <div><img src="images/boca_chica/boca2.jpg" alt="Boca Chica 2"></div>
-      <div><img src="images/boca_chica/boca3.jpg" alt="Boca Chica 3"></div>
-      <div><img src="images/boca_chica/boca4.jpg" alt="Boca Chica 4"></div>
-      <div><img src="images/boca_chica/boca5.jpg" alt="Boca Chica 5"></div>
-    </div>
-  </section>
+            <label>Correo electrónico:</label>
+            <input type="email" name="email" required>
 
-  <!-- Bahia de las Aguilas -->
-  <section class="section">
-    <h2>Bahía de las Águilas</h2>
-    <div class="carousel bahia-carousel">
-      <div><img src="images/bahia_de_las_aguilas/bahia1.jpg" alt="Bahía 1"></div>
-      <div><img src="images/bahia_de_las_aguilas/bahia2.jpg" alt="Bahía 2"></div>
-      <div><img src="images/bahia_de_las_aguilas/bahia3.jpg" alt="Bahía 3"></div>
-      <div><img src="images/bahia_de_las_aguilas/bahia4.jpg" alt="Bahía 4"></div>
-      <div><img src="images/bahia_de_las_aguilas/bahia5.jpg" alt="Bahía 5"></div>
-    </div>
-  </section>
+            <label>Servicio solicitado:</label>
+            <input type="text" name="servicio" required>
 
-  <!-- Vision & Mission -->
-  <section class="section info">
-    <h2>Nuestra Visión</h2>
-    <p>Ser la empresa de transporte y excursiones más confiable de República Dominicana, brindando experiencias inolvidables a nuestros clientes.</p>
-    <h2>Nuestra Misión</h2>
-    <p>Ofrecer un servicio seguro, puntual y personalizado que conecte a los turistas con la belleza natural y cultural de nuestro país.</p>
-  </section>
+            <label>Mensaje:</label>
+            <textarea name="mensaje" required></textarea>
 
-  <!-- Form -->
-  <section id="formulario" class="section form-section">
-    <h2>Reservar ahora</h2>
-    <form id="bookingForm" action="https://formspree.io/f/tuformid" method="POST">
-      <label for="name">Nombre</label>
-      <input id="name" name="name" type="text" required>
+            <button type="submit" class="btn-reservar">Enviar</button>
+        </form>
+    </section>
 
-      <label for="email">Email</label>
-      <input id="email" name="email" type="email">
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Services Travel Rojo Cana - Todos los derechos reservados</p>
+        <p>Email: <a href="mailto:servicestravelrojo@gmail.com">servicestravelrojo@gmail.com</a> | WhatsApp: +1 809 251 5727</p>
+        <a href="index_en.html">English</a>
+    </footer>
 
-      <label for="phone">Teléfono</label>
-      <input id="phone" name="phone" type="tel" required>
+    <!-- Script para carruseles -->
+    <script>
+        document.querySelectorAll('.carousel').forEach(carousel => {
+            let scrollAmount = 0;
+            carousel.addEventListener('wheel', (e) => {
+                e.preventDefault();
+                carousel.scrollBy({
+                    left: e.deltaY < 0 ? -300 : 300,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 
-      <label for="service">Servicio solicitado</label>
-      <input id="service" name="service" type="text" required>
+    <style>
+        body {margin:0;font-family:Arial, sans-serif;}
+        .hero {height:100vh;background-size:cover;background-position:center;display:flex;align-items:center;justify-content:center;position:relative;}
+        .overlay {background:rgba(0,0,0,0.5);padding:20px;text-align:center;color:#fff;}
+        .logo {width:120px;}
+        .btn-reservar, .btn-whatsapp {background:red;color:#fff;padding:10px 20px;margin:5px;text-decoration:none;border-radius:5px;}
+        .btn-whatsapp {background:green;}
+        .galeria {padding:20px;}
+        .carousel {display:flex;overflow-x:auto;gap:10px;}
+        .carousel img {height:200px;border-radius:10px;}
+        .mision-vision {display:flex;justify-content:space-around;padding:20px;background:#f0f0f0;}
+        .form-section {padding:20px;background:#e3f2fd;}
+        form {display:flex;flex-direction:column;gap:10px;max-width:400px;margin:auto;}
+        footer {text-align:center;padding:20px;background:#333;color:#fff;}
+        footer a {color:#fff;}
+    </style>
 
-      <label for="date">Fecha</label>
-      <input id="date" name="date" type="date" required>
-
-      <button type="submit" class="btn reservar">Enviar</button>
-    </form>
-    <p class="note">O escribe por WhatsApp: <a id="wa-link-form" href="https://wa.me/18092515727" target="_blank">+1 809 251 5727</a></p>
-  </section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="wrap">
-    <p>© 2025 Services Travel Rojo Cana</p>
-    <a href="https://instagram.com/st.rojocana" target="_blank">Instagram</a> |
-    <a href="sitemap.xml">Sitemap</a>
-  </div>
-</footer>
-
-<!-- Scripts: jQuery + Slick -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script>
-// Init sliders
-$(document).ready(function(){
-  $('.carousel').slick({
-    autoplay: true,
-    autoplaySpeed: 2800,
-    dots: true,
-    arrows: true,
-    adaptiveHeight: true
-  });
-});
-
-// On form submit: send to Formspree and also open WhatsApp with message
-document.getElementById('bookingForm').addEventListener('submit', function(e){
-  // open WhatsApp with message (so you get immediate notice)
-  var name = encodeURIComponent(document.getElementById('name').value || '');
-  var phone = encodeURIComponent(document.getElementById('phone').value || '');
-  var service = encodeURIComponent(document.getElementById('service').value || '');
-  var msg = 'Nueva reserva - Nombre: ' + name + ' - Tel:' + phone + ' - Servicio: ' + service;
-  var wa = 'https://wa.me/18092515727?text=' + encodeURIComponent(msg);
-  // open wa in new tab
-  window.open(wa, '_blank');
-  // allow normal form submission to Formspree
-});
-</script>
 </body>
-                                              </html>
+</html>
