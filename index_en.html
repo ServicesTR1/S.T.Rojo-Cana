@@ -1,169 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Services Travel Rojo Cana - Transportation, Tours & Excursions in DR</title>
-<meta name="description" content="Private transfers, tours, and excursions throughout the Dominican Republic with Services Travel Rojo Cana. Explore Saona, Buggy tours, and more.">
-<meta name="keywords" content="Dominican Republic transfers, Punta Cana excursions, Saona tour, buggy rides, private transportation DR">
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<style>
-/* Basic reset */
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body {
-    font-family: Arial, sans-serif;
-    color: #fff;
-    background: url('images/otros/fondo.jpg') no-repeat center center/cover;
-    background-attachment: fixed;
-}
-header {
-    background: rgba(0,0,0,0.5);
-    padding: 10px;
-    text-align: center;
-}
-header img { height: 80px; }
-header h1 { font-size: 24px; margin-top: 10px; }
-header p { font-size: 16px; font-style: italic; }
-
-nav {
-    background: rgba(255,255,255,0.1);
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 10px;
-}
-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-nav a:hover { text-decoration: underline; }
-
-.section {
-    padding: 40px 20px;
-    background: rgba(0,0,0,0.6);
-    margin: 20px;
-    border-radius: 12px;
-}
-.section h2 { text-align: center; margin-bottom: 20px; }
-
-.slider {
-    display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-}
-.slider img {
-    height: 200px;
-    margin: 0 10px;
-    border-radius: 10px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 500px;
-    margin: auto;
-}
-form input, form textarea, form select {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    font-size: 14px;
-}
-form button {
-    padding: 12px;
-    background: red;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-}
-form button:hover { background: darkred; }
-
-.whatsapp-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25D366;
-    padding: 15px;
-    border-radius: 50%;
-    color: #fff;
-    font-size: 24px;
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services Travel Rojo Cana transportation, tours and excursions in Dominican Republic</title>
+  <meta name="description" content="Private transfers, tours and excursions across the Dominican Republic. Live with passion, Live Rojo Cana... Just think about it, and we'll take you." />
+  <link rel="canonical" href="https://YOUR_DOMAIN/index_en.html" />
+  <link rel="alternate" hreflang="es" href="https://YOUR_DOMAIN/" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
+  <meta property="og:title" content="Services Travel Rojo Cana" />
+  <meta property="og:description" content="Private transportation, tours & excursions in the Dominican Republic." />
+  <meta property="og:image" content="https://YOUR_DOMAIN/images/otros/logo.png" />
 </head>
 <body>
 
-<header>
-    <img src="images/otros/logo.png" alt="Services Travel Rojo Cana Logo">
-    <h1>Explore with Passion, Live Rojo Cana</h1>
-    <p>Just think about it... and we take you.</p>
+<header class="hero" style="background-image:url('images/otros/fondo.jpg')">
+  <div class="hero__overlay">
+    <img class="logo" src="images/otros/logo.png" alt="Services Travel Rojo Cana Logo" />
+    <h1 class="slogan">Explore with Passion, Live Rojo Cana…</h1>
+    <p class="sub-slogan">Just think about it, and we’ll take you.</p>
+    <div class="cta-row">
+      <a class="btn btn--primary" href="#book">Book Now</a>
+      <a class="btn btn--whatsapp" target="_blank" href="https://wa.me/18092515727">WhatsApp</a>
+      <a class="btn" href="index.html">Español</a>
+    </div>
+  </div>
 </header>
 
-<nav>
-    <a href="#transfers">Transfers</a>
-    <a href="#buggy">Buggy</a>
-    <a href="#saona">Saona</a>
-    <a href="#mission">Mission & Vision</a>
-    <a href="#book">Book Now</a>
-</nav>
-
-<section id="transfers" class="section">
+<main>
+  <section class="section" id="transfers">
     <h2>Transfers</h2>
     <div class="slider">
+      <button class="slider__btn prev" aria-label="Previous">‹</button>
+      <div class="slider__track">
         <img src="images/transfer/transfer1.jpg" alt="Transfer 1">
         <img src="images/transfer/transfer2.jpg" alt="Transfer 2">
         <img src="images/transfer/transfer3.jpg" alt="Transfer 3">
+        <img src="images/transfer/transfer4.jpg" alt="Transfer 4">
+        <img src="images/transfer/transfer5.jpg" alt="Transfer 5">
+      </div>
+      <button class="slider__btn next" aria-label="Next">›</button>
     </div>
-</section>
+  </section>
 
-<section id="buggy" class="section">
-    <h2>Buggy Tours</h2>
+  <section class="section" id="buggy">
+    <h2>Buggy</h2>
     <div class="slider">
+      <button class="slider__btn prev" aria-label="Previous">‹</button>
+      <div class="slider__track">
         <img src="images/buggy/buggy1.jpg" alt="Buggy 1">
         <img src="images/buggy/buggy2.jpg" alt="Buggy 2">
         <img src="images/buggy/buggy3.jpg" alt="Buggy 3">
+        <img src="images/buggy/buggy4.jpg" alt="Buggy 4">
+        <img src="images/buggy/buggy5.jpg" alt="Buggy 5">
+      </div>
+      <button class="slider__btn next" aria-label="Next">›</button>
     </div>
-</section>
+  </section>
 
-<section id="saona" class="section">
+  <section class="section" id="saona">
     <h2>Saona Island</h2>
     <div class="slider">
+      <button class="slider__btn prev" aria-label="Previous">‹</button>
+      <div class="slider__track">
         <img src="images/saona/saona1.jpg" alt="Saona 1">
         <img src="images/saona/saona2.jpg" alt="Saona 2">
         <img src="images/saona/saona3.jpg" alt="Saona 3">
+        <img src="images/saona/saona4.jpg" alt="Saona 4">
+        <img src="images/saona/saona5.jpg" alt="Saona 5">
+      </div>
+      <button class="slider__btn next" aria-label="Next">›</button>
     </div>
-</section>
+  </section>
 
-<section id="mission" class="section">
-    <h2>Mission & Vision</h2>
-    <p><strong>Mission:</strong> Offer unforgettable transportation and tourism experiences throughout the Dominican Republic with safety, comfort, and personalized service.</p>
-    <p><strong>Vision:</strong> Be the leading tourism company in the Dominican Republic, recognized for excellence and commitment to our customers.</p>
-</section>
+  <section class="section section--panel" id="mission">
+    <div class="panel">
+      <h3>Mission</h3>
+      <p>Provide safe, punctual and personalized transportation and tours to enjoy the beauty of the Dominican Republic.</p>
+    </div>
+    <div class="panel">
+      <h3>Vision</h3>
+      <p>Be the leading transportation & tours company in the DR, recognized for quality, trust and hospitality.</p>
+    </div>
+  </section>
 
-<section id="book" class="section">
+  <section class="section" id="book">
     <h2>Book Now</h2>
-    <form action="https://api.whatsapp.com/send" method="get" target="_blank">
-        <input type="hidden" name="phone" value="+18092515727">
-        <input type="text" name="name" placeholder="Full Name" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <input type="tel" name="phoneNumber" placeholder="Phone Number" required>
-        <select name="service" required>
-            <option value="">Select Service</option>
-            <option value="Transfer">Transfer</option>
-            <option value="Buggy">Buggy Tour</option>
-            <option value="Saona">Saona Island</option>
-        </select>
-        <textarea name="message" placeholder="Additional details"></textarea>
-        <button type="submit">Send via WhatsApp</button>
+    <form id="book-form">
+      <input type="text" name="name" placeholder="Full name" required />
+      <input type="tel" name="phone" placeholder="Phone" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <input type="text" name="service" placeholder="Requested service" required />
+      <label>Arrival date</label>
+      <input type="date" name="arrival" required />
+      <label>Departure date</label>
+      <input type="date" name="departure" required />
+      <textarea name="message" placeholder="Additional details (flight, hotel, people)"></textarea>
+      <button class="btn btn--primary" type="submit">Send via WhatsApp</button>
     </form>
-</section>
+    <p class="alt-contact">Prefer email? <a href="mailto:servicestravelrojo@gmail.com">servicestravelrojo@gmail.com</a></p>
+  </section>
+</main>
 
-<a href="https://api.whatsapp.com/send?phone=18092515727" class="whatsapp-btn">
-    <i class="fab fa-whatsapp"></i>
-</a>
+<footer class="footer">
+  <p>© 2025 Services Travel Rojo Cana — All rights reserved</p>
+  <nav class="footer__nav">
+    <a href="index.html" hreflang="es">Español</a>
+  </nav>
+</footer>
 
+<script>
+  document.querySelectorAll('.slider').forEach(slider => {
+    const track = slider.querySelector('.slider__track');
+    const prev = slider.querySelector('.prev');
+    const next = slider.querySelector('.next');
+    const step = 320;
+    prev.addEventListener('click', () => track.scrollBy({left:-step,behavior:'smooth'}));
+    next.addEventListener('click', () => track.scrollBy({left: step,behavior:'smooth'}));
+  });
+
+  document.getElementById('book-form').addEventListener('submit', function(e){
+    e.preventDefault();
+    const d = new FormData(this);
+    const txt = [
+      "*New booking*",
+      "Name: " + d.get('name'),
+      "Phone: " + d.get('phone'),
+      "Email: " + d.get('email'),
+      "Service: " + d.get('service'),
+      "Arrival: " + d.get('arrival'),
+      "Departure: " + d.get('departure'),
+      "Message: " + (d.get('message')||'')
+    ].join("%0A");
+    window.open("https://wa.me/18092515727?text="+txt,"_blank");
+  });
+</script>
 </body>
 </html>
