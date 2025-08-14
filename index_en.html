@@ -2,138 +2,182 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Services Travel Rojo Cana transportation, tours and excursions in Dominican Republic</title>
-  <meta name="description" content="Private transfers, tours and excursions across the Dominican Republic. Live with passion, Live Rojo Cana... Just think about it, and we'll take you." />
-  <link rel="canonical" href="https://YOUR_DOMAIN/index_en.html" />
-  <link rel="alternate" hreflang="es" href="https://YOUR_DOMAIN/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Services Travel Rojo Cana transportation, tours and excursions in DR</title>
+  <meta name="description" content="Private transportation, tours and excursions across the Dominican Republic. Comfort, safety and personalized service." />
+  <meta name="keywords" content="Rojo Cana, transportation, tours, excursions, Punta Cana, Saona, buggy, airport, hotel" />
+  <link rel="canonical" href="https://rojocana.com/index_en.html" />
+  <link rel="alternate" hreflang="es" href="https://rojocana.com/" />
   <link rel="icon" href="favicon.ico" />
-  <link rel="stylesheet" href="style.css" />
   <meta property="og:title" content="Services Travel Rojo Cana" />
-  <meta property="og:description" content="Private transportation, tours & excursions in the Dominican Republic." />
-  <meta property="og:image" content="https://YOUR_DOMAIN/images/otros/logo.png" />
+  <meta property="og:description" content="Private transportation, tours and excursions in the Dominican Republic." />
+  <meta property="og:image" content="https://rojocana.com/images/otros/logo.png" />
+  <meta property="og:type" content="website" />
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"Services Travel Rojo Cana",
+    "description":"Private transportation, tours and excursions in the Dominican Republic",
+    "telephone":"+1 809 251 5727",
+    "image":"https://rojocana.com/images/otros/logo.png",
+    "areaServed":"Dominican Republic",
+    "url":"https://rojocana.com/index_en.html"
+  }
+  </script>
+  <style>
+    :root{
+      --red:#e53935; --green:#25d366; --text:#1a202c; --light:#f7fafc;
+      --card:#ffffff; --border:#e2e8f0;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; font-family:system-ui, Arial, sans-serif; background:var(--light); color:var(--text);}
+    a{color:inherit}
+    .hero{
+      min-height:60vh; background:url('images/otros/fondo.jpg') center/cover no-repeat;
+      display:grid; place-items:center; text-align:center; padding:40px 16px;
+    }
+    .hero__box{background:rgba(255,255,255,.75); backdrop-filter:blur(2px);
+      padding:24px 20px; border-radius:18px; max-width:900px; width:min(92%,900px); border:1px solid var(--border);}
+    .logo{width:110px}
+    .slogan{font-size:clamp(22px, 3.5vw, 34px); margin:12px 0 4px}
+    .sub{font-size:clamp(14px, 2.2vw, 18px); margin:0}
+    .nav{display:flex; gap:14px; justify-content:center; flex-wrap:wrap; padding:12px 16px}
+    .nav a{ text-decoration:none; background:#fff; padding:10px 14px; border:1px solid var(--border);
+      border-radius:999px; font-weight:600;}
+    .nav a.cta{background:var(--red); color:#fff; border-color:var(--red)}
+    section{padding:28px 16px}
+    h2{margin:0 0 14px; text-align:center; font-size:clamp(20px, 3vw, 28px)}
+    .wrap{max-width:1100px; margin:0 auto}
+    .card{background:var(--card); border:1px solid var(--border); border-radius:14px; padding:16px}
+    .carousel{
+      display:grid; grid-auto-flow:column; grid-auto-columns: 85%;
+      gap:12px; overflow-x:auto; scroll-snap-type:x mandatory;
+      -webkit-overflow-scrolling:touch; padding:8px 6px 14px; margin:0 auto; max-width:1000px;
+    }
+    @media(min-width:900px){ .carousel{ grid-auto-columns: 48%; } }
+    .carousel img{
+      width:100%; height:320px; object-fit:cover; border-radius:12px; scroll-snap-align:center; background:#ddd;
+    }
+    .carousel::-webkit-scrollbar{height:8px}
+    .carousel::-webkit-scrollbar-thumb{background:#cbd5e1; border-radius:999px}
+    .form{display:grid; gap:10px; max-width:640px; margin:0 auto}
+    .form input,.form textarea,.form select{
+      padding:12px; border:1px solid var(--border); border-radius:10px; background:#fff; width:100%;
+    }
+    .btn{padding:12px 16px; border:0; border-radius:10px; font-weight:700; cursor:pointer}
+    .btn--red{background:var(--red); color:#fff}
+    .btn--wa{background:var(--green); color:#fff; text-decoration:none; display:inline-block; text-align:center}
+    footer{background:#0f172a; color:#e5e7eb; text-align:center; padding:20px}
+  </style>
 </head>
 <body>
 
-<header class="hero" style="background-image:url('images/otros/fondo.jpg')">
-  <div class="hero__overlay">
-    <img class="logo" src="images/otros/logo.png" alt="Services Travel Rojo Cana Logo" />
-    <h1 class="slogan">Explore with Passion, Live Rojo Cana…</h1>
-    <p class="sub-slogan">Just think about it, and we’ll take you.</p>
-    <div class="cta-row">
-      <a class="btn btn--primary" href="#book">Book Now</a>
-      <a class="btn btn--whatsapp" target="_blank" href="https://wa.me/18092515727">WhatsApp</a>
-      <a class="btn" href="index.html">Español</a>
-    </div>
+<header class="hero">
+  <div class="hero__box">
+    <img class="logo" src="images/otros/logo.png" alt="Services Travel Rojo Cana logo">
+    <h1 class="slogan">Explore with Passion, Live Rojo Cana</h1>
+    <p class="sub">Just think about it… and we’ll take you there.</p>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#transfer">Transfer</a>
+      <a href="#buggy">Buggy</a>
+      <a href="#saona">Saona</a>
+      <a href="#book" class="cta">Book</a>
+      <a href="index.html" hreflang="es">Español</a>
+    </nav>
   </div>
 </header>
 
 <main>
-  <section class="section" id="transfers">
-    <h2>Transfers</h2>
-    <div class="slider">
-      <button class="slider__btn prev" aria-label="Previous">‹</button>
-      <div class="slider__track">
-        <img src="images/transfer/transfer1.jpg" alt="Transfer 1">
-        <img src="images/transfer/transfer2.jpg" alt="Transfer 2">
-        <img src="images/transfer/transfer3.jpg" alt="Transfer 3">
-        <img src="images/transfer/transfer4.jpg" alt="Transfer 4">
-        <img src="images/transfer/transfer5.jpg" alt="Transfer 5">
+  <section id="transfer">
+    <div class="wrap card">
+      <h2>Transfer</h2>
+      <div class="carousel" aria-label="Transfer gallery (swipe)">
+        <img src="images/transfer/transfer1.jpg" alt="Transfer vehicle 1" loading="lazy">
+        <img src="images/transfer/transfer2.jpg" alt="Transfer vehicle 2" loading="lazy">
+        <img src="images/transfer/transfer3.jpg" alt="Transfer vehicle 3" loading="lazy">
+        <img src="images/transfer/transfer4.jpg" alt="Transfer vehicle 4" loading="lazy">
       </div>
-      <button class="slider__btn next" aria-label="Next">›</button>
     </div>
   </section>
 
-  <section class="section" id="buggy">
-    <h2>Buggy</h2>
-    <div class="slider">
-      <button class="slider__btn prev" aria-label="Previous">‹</button>
-      <div class="slider__track">
-        <img src="images/buggy/buggy1.jpg" alt="Buggy 1">
-        <img src="images/buggy/buggy2.jpg" alt="Buggy 2">
-        <img src="images/buggy/buggy3.jpg" alt="Buggy 3">
-        <img src="images/buggy/buggy4.jpg" alt="Buggy 4">
-        <img src="images/buggy/buggy5.jpg" alt="Buggy 5">
+  <section id="buggy">
+    <div class="wrap card">
+      <h2>Buggy</h2>
+      <div class="carousel" aria-label="Buggy gallery (swipe)">
+        <img src="images/buggy/buggy1.jpg" alt="Buggy tour 1" loading="lazy">
+        <img src="images/buggy/buggy2.jpg" alt="Buggy tour 2" loading="lazy">
+        <img src="images/buggy/buggy3.jpg" alt="Buggy tour 3" loading="lazy">
+        <img src="images/buggy/buggy4.jpg" alt="Buggy tour 4" loading="lazy">
       </div>
-      <button class="slider__btn next" aria-label="Next">›</button>
     </div>
   </section>
 
-  <section class="section" id="saona">
-    <h2>Saona Island</h2>
-    <div class="slider">
-      <button class="slider__btn prev" aria-label="Previous">‹</button>
-      <div class="slider__track">
-        <img src="images/saona/saona1.jpg" alt="Saona 1">
-        <img src="images/saona/saona2.jpg" alt="Saona 2">
-        <img src="images/saona/saona3.jpg" alt="Saona 3">
-        <img src="images/saona/saona4.jpg" alt="Saona 4">
-        <img src="images/saona/saona5.jpg" alt="Saona 5">
+  <section id="saona">
+    <div class="wrap card">
+      <h2>Saona Island</h2>
+      <div class="carousel" aria-label="Saona gallery (swipe)">
+        <img src="images/saona/saona1.jpg" alt="Saona Island 1" loading="lazy">
+        <img src="images/saona/saona2.jpg" alt="Saona Island 2" loading="lazy">
+        <img src="images/saona/saona3.jpg" alt="Saona Island 3" loading="lazy">
+        <img src="images/saona/saona4.jpg" alt="Saona Island 4" loading="lazy">
       </div>
-      <button class="slider__btn next" aria-label="Next">›</button>
     </div>
   </section>
 
-  <section class="section section--panel" id="mission">
-    <div class="panel">
-      <h3>Mission</h3>
-      <p>Provide safe, punctual and personalized transportation and tours to enjoy the beauty of the Dominican Republic.</p>
+  <section id="book">
+    <div class="wrap card">
+      <h2>Book now</h2>
+      <form id="form-book" class="form" action="https://formspree.io/f/mnqekvwb" method="POST" novalidate>
+        <input type="text" name="name" placeholder="Full name" required>
+        <input type="tel" name="phone" placeholder="Phone" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <select name="service" required>
+          <option value="">Requested service</option>
+          <option>Transfer</option>
+          <option>Buggy</option>
+          <option>Saona Island</option>
+        </select>
+        <input type="date" name="arrival_date" placeholder="Arrival date">
+        <input type="date" name="departure_date" placeholder="Departure date">
+        <textarea name="message" rows="4" placeholder="Additional details (flight, hotel, people)"></textarea>
+        <button class="btn btn--red" type="submit">Send</button>
+        <a class="btn btn--wa" href="https://wa.me/18092515727" target="_blank" rel="noopener">WhatsApp</a>
+      </form>
     </div>
-    <div class="panel">
-      <h3>Vision</h3>
-      <p>Be the leading transportation & tours company in the DR, recognized for quality, trust and hospitality.</p>
-    </div>
-  </section>
-
-  <section class="section" id="book">
-    <h2>Book Now</h2>
-    <form id="book-form">
-      <input type="text" name="name" placeholder="Full name" required />
-      <input type="tel" name="phone" placeholder="Phone" required />
-      <input type="email" name="email" placeholder="Email" required />
-      <input type="text" name="service" placeholder="Requested service" required />
-      <label>Arrival date</label>
-      <input type="date" name="arrival" required />
-      <label>Departure date</label>
-      <input type="date" name="departure" required />
-      <textarea name="message" placeholder="Additional details (flight, hotel, people)"></textarea>
-      <button class="btn btn--primary" type="submit">Send via WhatsApp</button>
-    </form>
-    <p class="alt-contact">Prefer email? <a href="mailto:servicestravelrojo@gmail.com">servicestravelrojo@gmail.com</a></p>
   </section>
 </main>
 
-<footer class="footer">
-  <p>© 2025 Services Travel Rojo Cana — All rights reserved</p>
-  <nav class="footer__nav">
-    <a href="index.html" hreflang="es">Español</a>
-  </nav>
+<footer>
+  <p>© 2025 Services Travel Rojo Cana — All rights reserved · <a href="index.html" hreflang="es">Español</a></p>
 </footer>
 
 <script>
-  document.querySelectorAll('.slider').forEach(slider => {
-    const track = slider.querySelector('.slider__track');
-    const prev = slider.querySelector('.prev');
-    const next = slider.querySelector('.next');
-    const step = 320;
-    prev.addEventListener('click', () => track.scrollBy({left:-step,behavior:'smooth'}));
-    next.addEventListener('click', () => track.scrollBy({left: step,behavior:'smooth'}));
-  });
-
-  document.getElementById('book-form').addEventListener('submit', function(e){
+  // Send to WhatsApp and Formspree without leaving the page
+  const formEn = document.getElementById('form-book');
+  formEn.addEventListener('submit', async function(e){
     e.preventDefault();
-    const d = new FormData(this);
-    const txt = [
-      "*New booking*",
-      "Name: " + d.get('name'),
-      "Phone: " + d.get('phone'),
-      "Email: " + d.get('email'),
-      "Service: " + d.get('service'),
-      "Arrival: " + d.get('arrival'),
-      "Departure: " + d.get('departure'),
-      "Message: " + (d.get('message')||'')
-    ].join("%0A");
-    window.open("https://wa.me/18092515727?text="+txt,"_blank");
+    const d = new FormData(formEn);
+
+    const line = s => encodeURIComponent(s);
+    const txt =
+      "*New booking*" + "%0A" +
+      "Name: " + line(d.get('name')||'') + "%0A" +
+      "Phone: " + line(d.get('phone')||'') + "%0A" +
+      "Email: " + line(d.get('email')||'') + "%0A" +
+      "Service: " + line(d.get('service')||'') + "%0A" +
+      "Arrival: " + line(d.get('arrival_date')||'') + "%0A" +
+      "Departure: " + line(d.get('departure_date')||'') + "%0A" +
+      "Message: " + line(d.get('message')||'');
+
+    window.open("https://wa.me/18092515727?text="+txt, "_blank");
+
+    try{
+      const res = await fetch(formEn.action, { method:"POST", body:d, headers:{ "Accept":"application/json" } });
+      formEn.reset();
+    }catch(err){
+      console.error(err);
+    }
   });
 </script>
 </body>
