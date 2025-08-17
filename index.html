@@ -1,169 +1,257 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Services Travel Rojo Cana transporte, tours y excursiones en República Dominicana. Transfers, buggies, Isla Saona y más.">
-  <title>Services Travel Rojo Cana transporte, tours y excursiones en RD</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services Travel Rojo Cana – transporte, tours y excursiones en RD</title>
+  <meta name="description" content="Transporte privado, tours y excursiones en toda República Dominicana. Vive con pasión, Vive Rojo Cana… Piénsalo y nosotros te llevamos." />
+  <meta name="keywords" content="transfer aeropuerto, excursiones, tours, Punta Cana, Saona, Buggy, Bahía de las Águilas, Boca Chica, República Dominicana" />
+
+  <!-- SEO idioma -->
+  <link rel="alternate" hreflang="en" href="index_en.html" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Ajuste para NO usar fondo.jpg en todo el sitio -->
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      color: #222;
-      background: url('images/otros/fondo.jpg') no-repeat center center fixed;
-      background-size: cover;
+    body{ background:#f7f9fc; color:#222; }
+    html{ scroll-behavior:smooth; }
+    .hero{
+      background: url("images/otros/fondo.jpg") center/cover no-repeat;
+      position: relative; text-align:center; padding: 80px 20px;
+      border-bottom: 4px solid #d60000;
     }
-    header {
-      background: rgba(255, 255, 255, 0.9);
-      text-align: center;
-      padding: 20px;
+    .hero .overlay{
+      max-width: 1100px; margin: 0 auto; background: rgba(255,255,255,0.85);
+      border-radius: 16px; padding: 24px;
     }
-    header img {
-      height: 80px;
+    .hero .logo{ height: 90px; }
+    .hero h1{ color:#004aad; margin: 10px 0 4px; font-size: 1.9rem; }
+    .hero p{ color:#008f39; font-style: italic; margin: 0 0 12px; }
+    .lang-switch, .cta{
+      display:inline-flex; gap:10px; flex-wrap:wrap; justify-content:center;
     }
-    header h1 {
-      margin: 10px 0 5px;
-      color: #d32f2f;
+    .btn{
+      background:#004aad; color:#fff; padding:10px 16px; border-radius:28px; text-decoration:none; font-weight:700;
     }
-    header p {
-      font-size: 18px;
-      color: #1565c0;
+    .btn--whatsapp{ background:#25d366; }
+    .btn--pay{ background:#d60000; }
+    .btn--light{ background:#ffffff; color:#004aad; border:2px solid #004aad; }
+    section.section{
+      max-width:1200px; margin:22px auto; background:#ffffff; border-radius:16px; padding:26px 16px;
+      box-shadow:0 6px 18px rgba(0,0,0,.08);
     }
-    nav {
-      background: rgba(0,0,0,0.7);
-      padding: 10px;
-      text-align: center;
+    h2.section-title{ text-align:center; color:#004aad; margin-bottom:14px; }
+
+    /* Slider manual */
+    .gallery{ position:relative; display:grid; grid-template-columns:auto 1fr auto; align-items:center; gap:8px; }
+    .carousel{
+      overflow:auto; scroll-snap-type:x mandatory; display:flex; gap:12px; padding:8px;
     }
-    nav a {
-      color: #fff;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
+    .carousel::-webkit-scrollbar{ height:8px; }
+    .carousel::-webkit-scrollbar-thumb{ background:#cfd8dc; border-radius:8px; }
+    .carousel img{
+      width:320px; height:auto; border-radius:12px; scroll-snap-align:center; box-shadow:0 4px 12px rgba(0,0,0,.12);
     }
-    section {
-      padding: 40px 20px;
-      background: rgba(255,255,255,0.9);
-      margin: 20px;
-      border-radius: 15px;
+    .nav-btn{
+      border:none; width:42px; height:42px; border-radius:50%; cursor:pointer; font-size:22px; line-height:0;
+      background:#004aad; color:#fff; display:grid; place-items:center;
     }
-    h2 {
-      text-align: center;
-      color: #d32f2f;
+    .nav-btn:hover{ background:#d60000; }
+
+    /* Formulario */
+    form#form-reserva{ max-width:600px; margin:0 auto; display:grid; gap:10px; }
+    form input, form textarea{
+      padding:12px; border:1px solid #dfe3e6; border-radius:10px; font-size:15px;
     }
-    .carousel {
-      display: flex;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      gap: 10px;
-      padding: 10px;
-    }
-    .carousel img {
-      width: 300px;
-      border-radius: 12px;
-      scroll-snap-align: center;
-    }
-    .btn {
-      display: inline-block;
-      background: #d32f2f;
-      color: #fff;
-      padding: 12px 20px;
-      border-radius: 8px;
-      text-decoration: none;
-      margin: 10px;
-    }
-    .btn-whatsapp {
-      background: #25d366;
-    }
-    form {
-      display: grid;
-      gap: 10px;
-      max-width: 500px;
-      margin: auto;
-    }
-    form input, form textarea {
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-    }
-    footer {
-      background: rgba(0,0,0,0.8);
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-    }
+    form button{ padding:12px 16px; border:none; border-radius:10px; background:#004aad; color:#fff; font-weight:700; cursor:pointer; }
+    form button:hover{ background:#d60000; }
+    .alt-contact{ text-align:center; margin-top:10px; }
+
+    /* Footer */
+    .footer{ text-align:center; color:#fff; background:#0f172a; padding:24px 12px; margin-top:24px; }
+    .footer a{ color:#4fc3f7; }
   </style>
 </head>
 <body>
-  <header>
-    <img src="images/otros/logo.png" alt="Logo Rojo Cana">
-    <h1>Services Travel Rojo Cana</h1>
-    <p>Explora con Pasión, Vive Rojo Cana</p>
-    <p><em>Sólo piénsalo… y nosotros te llevamos.</em></p>
+
+  <!-- HERO (fondo.jpg SOLO aquí) -->
+  <header class="hero">
+    <div class="overlay">
+      <img src="images/otros/logo.png" alt="Logo Services Travel Rojo Cana" class="logo" />
+      <h1>Vive con pasión, Vive Rojo Cana…</h1>
+      <p>Piénsalo y nosotros te llevamos.</p>
+
+      <div class="cta" style="margin:8px 0 12px;">
+        <a class="btn" href="#reserva">Reservar</a>
+        <a class="btn btn--whatsapp" target="_blank" href="https://wa.me/18092515727">WhatsApp</a>
+        <a class="btn btn--pay" href="#pago">Pagar</a>
+      </div>
+
+      <!-- Botón de idioma -->
+      <div class="lang-switch">
+        <a class="btn btn--light" href="index_en.html" hreflang="en" aria-label="Switch to English">English</a>
+      </div>
+    </div>
   </header>
 
-  <nav>
-    <a href="#transfer">Transfer</a>
-    <a href="#buggy">Buggy</a>
-    <a href="#saona">Saona</a>
-    <a href="#mision">Misión y Visión</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
+  <main>
+    <!-- TRANSFER -->
+    <section class="section" id="transfer">
+      <h2 class="section-title">Transfer</h2>
+      <div class="gallery">
+        <button class="nav-btn prev" aria-label="Anterior">‹</button>
+        <div class="carousel" data-step="320">
+          <img src="images/transfer/transfer1.jpg" alt="Transfer 1">
+          <img src="images/transfer/transfer2.jpg" alt="Transfer 2">
+          <img src="images/transfer/transfer3.jpg" alt="Transfer 3">
+          <img src="images/transfer/transfer4.jpg" alt="Transfer 4">
+          <img src="images/transfer/transfer5.jpg" alt="Transfer 5">
+        </div>
+        <button class="nav-btn next" aria-label="Siguiente">›</button>
+      </div>
+    </section>
 
-  <section id="transfer">
-    <h2>Transfer</h2>
-    <div class="carousel">
-      <img src="images/transfer/transfer1.jpg" alt="Transfer 1">
-      <img src="images/transfer/transfer2.jpg" alt="Transfer 2">
-      <img src="images/transfer/transfer3.jpg" alt="Transfer 3">
-      <img src="images/transfer/transfer4.jpg" alt="Transfer 4">
-      <img src="images/transfer/transfer5.jpg" alt="Transfer 5">
-    </div>
-  </section>
+    <!-- BUGGY -->
+    <section class="section" id="buggy">
+      <h2 class="section-title">Buggy</h2>
+      <div class="gallery">
+        <button class="nav-btn prev" aria-label="Anterior">‹</button>
+        <div class="carousel" data-step="320">
+          <img src="images/buggy/buggy1.jpg" alt="Buggy 1">
+          <img src="images/buggy/buggy2.jpg" alt="Buggy 2">
+          <img src="images/buggy/buggy3.jpg" alt="Buggy 3">
+          <img src="images/buggy/buggy4.jpg" alt="Buggy 4">
+          <img src="images/buggy/buggy5.jpg" alt="Buggy 5">
+        </div>
+        <button class="nav-btn next" aria-label="Siguiente">›</button>
+      </div>
+    </section>
 
-  <section id="buggy">
-    <h2>Tour Buggy</h2>
-    <div class="carousel">
-      <img src="images/buggy/buggy1.jpg" alt="Buggy 1">
-      <img src="images/buggy/buggy2.jpg" alt="Buggy 2">
-      <img src="images/buggy/buggy3.jpg" alt="Buggy 3">
-    </div>
-  </section>
+    <!-- ISLA SAONA -->
+    <section class="section" id="saona">
+      <h2 class="section-title">Isla Saona</h2>
+      <div class="gallery">
+        <button class="nav-btn prev" aria-label="Anterior">‹</button>
+        <div class="carousel" data-step="320">
+          <img src="images/saona/saona1.jpg" alt="Saona 1">
+          <img src="images/saona/saona2.jpg" alt="Saona 2">
+          <img src="images/saona/saona3.jpg" alt="Saona 3">
+          <img src="images/saona/saona4.jpg" alt="Saona 4">
+          <img src="images/saona/saona5.jpg" alt="Saona 5">
+        </div>
+        <button class="nav-btn next" aria-label="Siguiente">›</button>
+      </div>
+    </section>
 
-  <section id="saona">
-    <h2>Isla Saona</h2>
-    <div class="carousel">
-      <img src="images/saona/saona1.jpg" alt="Saona 1">
-      <img src="images/saona/saona2.jpg" alt="Saona 2">
-      <img src="images/saona/saona3.jpg" alt="Saona 3">
-    </div>
-  </section>
+    <!-- BOCA CHICA -->
+    <section class="section" id="boca-chica">
+      <h2 class="section-title">Boca Chica</h2>
+      <div class="gallery">
+        <button class="nav-btn prev" aria-label="Anterior">‹</button>
+        <div class="carousel" data-step="320">
+          <img src="images/boca_chica/boca1.jpg" alt="Boca Chica 1">
+          <img src="images/boca_chica/boca2.jpg" alt="Boca Chica 2">
+          <img src="images/boca_chica/boca3.jpg" alt="Boca Chica 3">
+          <img src="images/boca_chica/boca4.jpg" alt="Boca Chica 4">
+          <img src="images/boca_chica/boca5.jpg" alt="Boca Chica 5">
+        </div>
+        <button class="nav-btn next" aria-label="Siguiente">›</button>
+      </div>
+    </section>
 
-  <section id="mision">
-    <h2>Misión y Visión</h2>
-    <p><strong>Misión:</strong> Ofrecer experiencias de transporte y excursiones seguras, confiables y memorables en toda República Dominicana.</p>
-    <p><strong>Visión:</strong> Ser la empresa preferida por turistas de todo el mundo que buscan calidad y confianza en sus viajes.</p>
-  </section>
+    <!-- BAHÍA DE LAS ÁGUILAS -->
+    <section class="section" id="bahia">
+      <h2 class="section-title">Bahía de las Águilas</h2>
+      <div class="gallery">
+        <button class="nav-btn prev" aria-label="Anterior">‹</button>
+        <div class="carousel" data-step="320">
+          <img src="images/bahia_de_las_aguilas/bahia1.jpg" alt="Bahía 1">
+          <img src="images/bahia_de_las_aguilas/bahia2.jpg" alt="Bahía 2">
+          <img src="images/bahia_de_las_aguilas/bahia3.jpg" alt="Bahía 3">
+          <img src="images/bahia_de_las_aguilas/bahia4.jpg" alt="Bahía 4">
+          <img src="images/bahia_de_las_aguilas/bahia5.jpg" alt="Bahía 5">
+        </div>
+        <button class="nav-btn next" aria-label="Siguiente">›</button>
+      </div>
+    </section>
 
-  <section id="contacto">
-    <h2>Reserva tu servicio</h2>
-    <form action="https://formspree.io/f/xjkvpndy" method="POST">
-      <input type="text" name="nombre" placeholder="Tu nombre" required>
-      <input type="email" name="email" placeholder="Tu correo" required>
-      <input type="tel" name="telefono" placeholder="Tu teléfono" required>
-      <input type="text" name="servicio" placeholder="Servicio solicitado" required>
-      <input type="date" name="fecha_llegada" required>
-      <input type="date" name="fecha_salida" required>
-      <textarea name="mensaje" placeholder="Mensaje adicional"></textarea>
-      <button type="submit" class="btn">Enviar Reserva</button>
-    </form>
-    <a href="https://wa.me/18092515727" target="_blank" class="btn btn-whatsapp">Reservar por WhatsApp</a>
-  </section>
+    <!-- MISIÓN / VISIÓN -->
+    <section class="section" id="vision-mision">
+      <h2 class="section-title">Misión y Visión</h2>
+      <div style="display:grid; gap:14px; grid-template-columns:1fr; max-width:900px; margin:0 auto;">
+        <div style="background:#f3f7ff; border-left:5px solid #004aad; padding:14px; border-radius:10px;">
+          <h3 style="margin:0 0 6px; color:#004aad;">Misión</h3>
+          <p>Ofrecer transporte y excursiones seguras, puntuales y personalizadas, conectando a nuestros clientes con la belleza de República Dominicana.</p>
+        </div>
+        <div style="background:#fff4f4; border-left:5px solid #d60000; padding:14px; border-radius:10px;">
+          <h3 style="margin:0 0 6px; color:#d60000;">Visión</h3>
+          <p>Ser la empresa de referencia en servicios turísticos por calidad, confianza y hospitalidad.</p>
+        </div>
+      </div>
+    </section>
 
-  <footer>
-    <p>© 2025 Services Travel Rojo Cana | <a href="index_en.html" style="color:#4FC3F7;">English</a></p>
-    <p>Contacto: servicestravelrojo@gmail.com | Instagram: <a href="https://instagram.com/st.rojocana" target="_blank" style="color:#4FC3F7;">@st.rojocana</a></p>
+    <!-- RESERVA -->
+    <section class="section" id="reserva">
+      <h2 class="section-title">Reservar ahora</h2>
+      <form id="form-reserva">
+        <input type="text" name="nombre" placeholder="Nombre completo" required />
+        <input type="tel" name="telefono" placeholder="Teléfono" required />
+        <input type="email" name="email" placeholder="Correo electrónico" required />
+        <input type="text" name="servicio" placeholder="Servicio solicitado" required />
+        <label>Fecha de llegada</label>
+        <input type="date" name="fecha_llegada" required />
+        <label>Fecha de salida</label>
+        <input type="date" name="fecha_salida" required />
+        <textarea name="mensaje" placeholder="Detalles (vuelo, hotel, personas)"></textarea>
+        <button type="submit">Enviar por WhatsApp</button>
+      </form>
+      <p class="alt-contact">¿Prefieres email? <a href="mailto:servicestravelrojo@gmail.com">servicestravelrojo@gmail.com</a></p>
+    </section>
+
+    <!-- PAGO -->
+    <section class="section" id="pago">
+      <h2 class="section-title">Pago seguro</h2>
+      <p>Contáctanos para coordinar el método de pago.</p>
+      <p><a class="btn btn--whatsapp" target="_blank" href="https://wa.me/18092515727">Escribir por WhatsApp</a></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Services Travel Rojo Cana — Todos los derechos reservados</p>
+    <nav><a href="#transfer">Transfer</a> · <a href="#buggy">Buggy</a> · <a href="#saona">Saona</a> · <a href="#boca-chica">Boca Chica</a> · <a href="#bahia">Bahía</a></nav>
+    <p><a href="index_en.html" hreflang="en">English</a></p>
   </footer>
+
+  <!-- Script: slider manual + WhatsApp -->
+  <script>
+    // Botones ‹ › para cada galería
+    document.querySelectorAll('.gallery').forEach(g => {
+      const scroller = g.querySelector('.carousel');
+      const prev = g.querySelector('.prev');
+      const next = g.querySelector('.next');
+      const step = Math.max(320, Math.round(scroller.clientWidth * 0.9));
+      prev.addEventListener('click', () => scroller.scrollBy({left: -step, behavior: 'smooth'}));
+      next.addEventListener('click', () => scroller.scrollBy({left:  step, behavior: 'smooth'}));
+    });
+
+    // Formulario -> WhatsApp
+    document.getElementById('form-reserva').addEventListener('submit', function(e){
+      e.preventDefault();
+      const d = new FormData(this);
+      const txt = [
+        "*Nueva reserva*",
+        "Nombre: " + d.get('nombre'),
+        "Teléfono: " + d.get('telefono'),
+        "Email: " + d.get('email'),
+        "Servicio: " + d.get('servicio'),
+        "Llegada: " + d.get('fecha_llegada'),
+        "Salida: " + d.get('fecha_salida'),
+        "Mensaje: " + (d.get('mensaje') || '')
+      ].join("%0A");
+      window.open("https://wa.me/18092515727?text="+txt,"_blank");
+    });
+  </script>
 </body>
 </html>
