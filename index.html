@@ -5,200 +5,132 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Services Travel Rojo Cana transporte, tours y excursiones en RD</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    /* ===== ESTILOS GENERALES ===== */
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: Arial, sans-serif;
-      color: #fff;
-      background: url('images/otros/fondo.jpg') no-repeat center center/cover;
-    }
-    header {
-      background: rgba(0,0,0,0.5);
-      text-align: center;
-      padding: 20px;
-    }
-    header img { max-height: 80px; }
-    header h1 { font-size: 28px; margin-top: 10px; }
-    header p { font-size: 18px; margin-top: 5px; }
-
-    /* ===== BOTONES ===== */
-    .btn {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 20px;
-      border-radius: 10px;
-      background: red;
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .btn:hover { background: darkred; }
-
-    .lang-switch {
-      position: absolute;
-      top: 20px; right: 20px;
-      background: #007bff;
-    }
-
-    /* ===== SECCIONES ===== */
-    section {
-      padding: 40px 20px;
-      background: rgba(0,0,0,0.6);
-      margin: 20px;
-      border-radius: 15px;
-    }
-    section h2 {
-      text-align: center;
-      font-size: 26px;
-      margin-bottom: 20px;
-    }
-
-    /* ===== CARRUSEL ===== */
-    .carousel {
-      display: flex;
-      overflow-x: auto;
-      scroll-behavior: smooth;
-      gap: 10px;
-    }
-    .carousel img {
-      max-height: 200px;
-      border-radius: 10px;
-    }
-
-    /* ===== FORMULARIO ===== */
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      max-width: 500px;
-      margin: auto;
-    }
-    input, textarea, select {
-      padding: 10px;
-      border-radius: 8px;
-      border: none;
-    }
-    button {
-      padding: 12px;
-      border: none;
-      border-radius: 10px;
-      background: green;
-      color: #fff;
-      font-weight: bold;
-      cursor: pointer;
-    }
-    button:hover { background: darkgreen; }
-
-    /* ===== FOOTER ===== */
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: rgba(0,0,0,0.7);
-    }
-  </style>
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- ===== HEADER ===== -->
-  <header>
-    <img src="images/otros/logo.png" alt="Logo Rojo Cana">
-    <h1>Explora con Pasión, Vive Rojo Cana</h1>
-    <p>Sólo piénsalo… y nosotros te llevamos.</p>
-    <a href="index_en.html" class="btn lang-switch">EN</a>
+
+  <!-- Portada -->
+  <header class="hero" style="background-image: url('images/otros/fondo.jpg');">
+    <div class="overlay">
+      <img src="images/otros/logo.png" alt="Logo Rojo Cana" class="logo">
+      <h1>Explora con Pasión, Vive Rojo Cana</h1>
+      <p>Sólo piénsalo… y nosotros te llevamos.</p>
+      <div class="buttons">
+        <a href="#formulario" class="btn">Reservar</a>
+        <a href="https://wa.me/18092515727" target="_blank" class="btn whatsapp">WhatsApp</a>
+        <a href="pago.html" class="btn">Pagar</a>
+        <a href="index_en.html" class="btn">English</a>
+      </div>
+    </div>
   </header>
 
-  <!-- ===== BOTONES PRINCIPALES ===== -->
-  <div style="text-align:center; margin-top:20px;">
-    <a href="https://wa.me/18092515727" class="btn">WhatsApp</a>
-    <a href="#formulario" class="btn">Reservar</a>
-    <a href="https://tu-link-de-pago.com" class="btn">Pagar</a>
-  </div>
-
-  <!-- ===== GALERÍAS ===== -->
-  <section>
-    <h2>Transfer</h2>
+  <!-- Carruseles -->
+  <section class="galeria">
+    <h2>Transfers</h2>
     <div class="carousel">
-      <img src="images/transfer/1.jpg" alt="Transfer 1">
-      <img src="images/transfer/2.jpg" alt="Transfer 2">
-      <img src="images/transfer/3.jpg" alt="Transfer 3">
+      <div class="slides">
+        <img src="images/transfer/1.jpg" alt="Transfer 1">
+        <img src="images/transfer/2.jpg" alt="Transfer 2">
+        <img src="images/transfer/3.jpg" alt="Transfer 3">
+        <img src="images/transfer/4.jpg" alt="Transfer 4">
+        <img src="images/transfer/5.jpg" alt="Transfer 5">
+      </div>
     </div>
-  </section>
 
-  <section>
-    <h2>Buggy</h2>
+    <h2>Buggies</h2>
     <div class="carousel">
-      <img src="images/buggy/1.jpg" alt="Buggy 1">
-      <img src="images/buggy/2.jpg" alt="Buggy 2">
-      <img src="images/buggy/3.jpg" alt="Buggy 3">
+      <div class="slides">
+        <img src="images/buggy/1.jpg" alt="Buggy 1">
+        <img src="images/buggy/2.jpg" alt="Buggy 2">
+        <img src="images/buggy/3.jpg" alt="Buggy 3">
+        <img src="images/buggy/4.jpg" alt="Buggy 4">
+        <img src="images/buggy/5.jpg" alt="Buggy 5">
+      </div>
     </div>
-  </section>
 
-  <section>
     <h2>Isla Saona</h2>
     <div class="carousel">
-      <img src="images/saona/1.jpg" alt="Saona 1">
-      <img src="images/saona/2.jpg" alt="Saona 2">
-      <img src="images/saona/3.jpg" alt="Saona 3">
+      <div class="slides">
+        <img src="images/saona/1.jpg" alt="Saona 1">
+        <img src="images/saona/2.jpg" alt="Saona 2">
+        <img src="images/saona/3.jpg" alt="Saona 3">
+        <img src="images/saona/4.jpg" alt="Saona 4">
+        <img src="images/saona/5.jpg" alt="Saona 5">
+      </div>
     </div>
-  </section>
 
-  <section>
     <h2>Boca Chica</h2>
     <div class="carousel">
-      <img src="images/boca_chica/1.jpg" alt="Boca Chica 1">
-      <img src="images/boca_chica/2.jpg" alt="Boca Chica 2">
-      <img src="images/boca_chica/3.jpg" alt="Boca Chica 3">
+      <div class="slides">
+        <img src="images/boca_chica/1.jpg" alt="Boca Chica 1">
+        <img src="images/boca_chica/2.jpg" alt="Boca Chica 2">
+        <img src="images/boca_chica/3.jpg" alt="Boca Chica 3">
+        <img src="images/boca_chica/4.jpg" alt="Boca Chica 4">
+        <img src="images/boca_chica/5.jpg" alt="Boca Chica 5">
+      </div>
     </div>
-  </section>
 
-  <section>
     <h2>Bahía de las Águilas</h2>
     <div class="carousel">
-      <img src="images/bahia_de_las_aguilas/1.jpg" alt="Bahía 1">
-      <img src="images/bahia_de_las_aguilas/2.jpg" alt="Bahía 2">
-      <img src="images/bahia_de_las_aguilas/3.jpg" alt="Bahía 3">
+      <div class="slides">
+        <img src="images/bahia_de_las_aguilas/1.jpg" alt="Bahía de las Águilas 1">
+        <img src="images/bahia_de_las_aguilas/2.jpg" alt="Bahía de las Águilas 2">
+        <img src="images/bahia_de_las_aguilas/3.jpg" alt="Bahía de las Águilas 3">
+        <img src="images/bahia_de_las_aguilas/4.jpg" alt="Bahía de las Águilas 4">
+        <img src="images/bahia_de_las_aguilas/5.jpg" alt="Bahía de las Águilas 5">
+      </div>
     </div>
   </section>
 
-  <!-- ===== VISIÓN Y MISIÓN ===== -->
-  <section>
+  <!-- Visión y Misión -->
+  <section class="vision-mision">
     <h2>Nuestra Visión</h2>
-    <p style="text-align:center;">Ser la empresa líder en transporte y excursiones en República Dominicana, reconocida por la excelencia en el servicio y la confianza de nuestros clientes.</p>
-  </section>
-
-  <section>
+    <p>Ser la empresa de transporte y excursiones más confiable de República Dominicana, llevando a cada visitante a descubrir lo mejor de nuestra isla.</p>
     <h2>Nuestra Misión</h2>
-    <p style="text-align:center;">Ofrecer experiencias únicas de transporte y turismo, con seguridad, puntualidad y calidad, haciendo que cada viaje sea inolvidable.</p>
+    <p>Brindar experiencias únicas a través de traslados seguros, excursiones inolvidables y un servicio de calidad, con calidez y profesionalidad.</p>
   </section>
 
-  <!-- ===== FORMULARIO ===== -->
+  <!-- Formulario -->
   <section id="formulario">
-    <h2>Reservar Ahora</h2>
-    <form action="mailto:servicestravelrojo@gmail.com" method="post" enctype="text/plain">
-      <input type="text" name="nombre" placeholder="Tu nombre" required>
-      <input type="email" name="email" placeholder="Tu correo" required>
-      <input type="tel" name="telefono" placeholder="Tu teléfono" required>
-      <select name="servicio">
-        <option>Transfer</option>
-        <option>Buggy</option>
-        <option>Isla Saona</option>
-        <option>Boca Chica</option>
-        <option>Bahía de las Águilas</option>
-      </select>
-      <label>Fecha llegada:</label>
-      <input type="date" name="fecha_llegada" required>
-      <label>Fecha salida:</label>
-      <input type="date" name="fecha_salida" required>
-      <textarea name="mensaje" placeholder="Detalles adicionales"></textarea>
-      <button type="submit">Enviar Reserva</button>
+    <h2>Reserva tu servicio</h2>
+    <form id="reservaForm">
+      <input type="text" id="nombre" placeholder="Tu nombre" required>
+      <input type="email" id="correo" placeholder="Tu correo" required>
+      <input type="tel" id="telefono" placeholder="Tu teléfono" required>
+      <input type="text" id="servicio" placeholder="Servicio solicitado" required>
+      <label>Fecha de llegada</label>
+      <input type="date" id="fecha_llegada" required>
+      <label>Fecha de salida</label>
+      <input type="date" id="fecha_salida" required>
+      <textarea id="mensaje" placeholder="Detalles adicionales"></textarea>
+      <button type="submit">Enviar</button>
     </form>
   </section>
 
-  <!-- ===== FOOTER ===== -->
+  <!-- Contacto -->
   <footer>
-    <p>Contacto: +1 809 251 5727 | servicestravelrojo@gmail.com</p>
-    <p>Síguenos en Instagram: <a href="https://instagram.com/st.rojocana" target="_blank" style="color:#0af;">@st.rojocana</a></p>
-    <p>&copy; 2025 Services Travel Rojo Cana</p>
+    <p>📍 República Dominicana | 📞 +1 809 251 5727 | ✉ servicestravelrojo@gmail.com</p>
+    <p>Síguenos en <a href="https://instagram.com/st.rojocana" target="_blank">Instagram</a></p>
   </footer>
+
+  <!-- Script formulario -->
+  <script>
+    document.getElementById("reservaForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const nombre = document.getElementById("nombre").value;
+      const correo = document.getElementById("correo").value;
+      const telefono = document.getElementById("telefono").value;
+      const servicio = document.getElementById("servicio").value;
+      const llegada = document.getElementById("fecha_llegada").value;
+      const salida = document.getElementById("fecha_salida").value;
+      const mensaje = document.getElementById("mensaje").value;
+
+      const texto = `Reserva:%0A👤 Nombre: ${nombre}%0A📧 Correo: ${correo}%0A📞 Tel: ${telefono}%0A📝 Servicio: ${servicio}%0A📅 Llegada: ${llegada}%0A📅 Salida: ${salida}%0A✏️ Mensaje: ${mensaje}`;
+      window.open(`https://wa.me/18092515727?text=${texto}`, "_blank");
+
+      alert("Tu solicitud ha sido enviada también por correo.");
+    });
+  </script>
+
 </body>
 </html>
