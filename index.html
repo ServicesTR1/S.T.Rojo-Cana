@@ -1,262 +1,120 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Services Travel Rojo Cana | Transporte, tours y excursiones en RD</title>
-
-  <!-- CSS principal -->
-  <link rel="stylesheet" href="style.css" />
-
-  <!-- Ajuste: fondo SOLO en portada, el resto claro -->
-  <style>
-    body { background:#ffffff !important; color:#111; }
-    /* Portada */
-    .hero {
-      background: url("images/otros/fondo.jpg") center/cover no-repeat;
-      position: relative;
-      min-height: 68vh;
-      display: grid;
-      place-items: center;
-      text-align: center;
-    }
-    .hero .overlay{
-      background: rgba(0,0,0,0.45);
-      width: 100%;
-      height: 100%;
-      display: grid;
-      place-items: center;
-      padding: 32px 16px;
-    }
-    .hero .inner {
-      max-width: 980px;
-      margin: 0 auto;
-      color: #fff;
-    }
-    .logo { width: 120px; height:auto; margin-bottom: 12px; }
-    .slogan { font-size: 2rem; margin: 4px 0; }
-    .sub { font-size: 1.1rem; opacity: .95; margin-bottom: 14px; }
-
-    .btns { display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-top:10px; }
-    .btn {
-      background:#e91e63; color:#fff; text-decoration:none; font-weight:700;
-      padding:10px 16px; border-radius:12px; display:inline-block;
-    }
-    .btn:hover{ filter:brightness(.95); }
-    .btn--wa { background:#25d366; }
-    .btn--pay { background:#ff9800; }
-    .lang { position:absolute; top:14px; right:14px; }
-    .lang a{ background:#1976d2; color:#fff; text-decoration:none; padding:8px 12px; border-radius:10px; font-weight:700;}
-
-    /* Secciones */
-    .section{ max-width:1100px; margin:28px auto; padding:0 16px; }
-    .section h2{ color:#0a6ebd; text-align:center; margin:10px 0 14px; }
-
-    /* Carrusel manual */
-    .slider{
-      position:relative; overflow:hidden; border-radius:14px; background:#f3f3f3;
-      box-shadow:0 6px 16px rgba(0,0,0,.08);
-    }
-    .slider__track{
-      display:flex; gap:8px; overflow-x:auto; scroll-behavior:smooth; padding:8px;
-    }
-    .slider__track img{
-      width:100%; max-width:360px; height:auto; border-radius:12px; flex:0 0 auto;
-      box-shadow:0 4px 12px rgba(0,0,0,.12);
-    }
-    .slider__btn{
-      position:absolute; top:50%; transform:translateY(-50%);
-      background:#111; color:#fff; border:none; width:36px; height:36px; border-radius:50%;
-      cursor:pointer; opacity:.85;
-    }
-    .slider__btn:hover{ opacity:1; }
-    .prev{ left:10px; } .next{ right:10px; }
-
-    /* Paneles visión/misión */
-    .paneles{ display:grid; gap:14px; grid-template-columns:repeat(auto-fit, minmax(260px,1fr)); }
-    .panel{ background:#f7f9fc; border-radius:14px; padding:16px; box-shadow:0 4px 12px rgba(0,0,0,.06); }
-    .panel h3{ margin-bottom:8px; color:#0a6ebd; }
-
-    /* Formulario */
-    form{ max-width:520px; margin: 0 auto; display:grid; gap:10px; }
-    input, textarea{ padding:10px; border-radius:10px; border:1px solid #ddd; }
-    textarea{ min-height:100px; }
-    .submit{ background:#0a9d56; color:#fff; border:0; padding:12px; border-radius:12px; font-weight:700; cursor:pointer; }
-    .submit:hover{ filter:brightness(.95); }
-
-    footer{ text-align:center; padding:24px 12px; color:#555; }
-    footer a{ color:#0a6ebd; text-decoration:underline; }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Services Travel Rojo Cana transporte, tours y excursiones en República Dominicana.">
+  <title>Services Travel Rojo Cana transporte, tours y excursiones en RD</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-  <!-- PORTADA (fondo sólo aquí) -->
-  <header class="hero">
-    <div class="overlay">
-      <div class="lang"><a href="index_en.html" hreflang="en">English</a></div>
-      <div class="inner">
-        <img class="logo" src="images/otros/logo.png" alt="Logo Services Travel Rojo Cana" />
-        <h1 class="slogan">Explora con Pasión, Vive Rojo Cana</h1>
-        <p class="sub">Sólo piénsalo… y nosotros te llevamos.</p>
-        <div class="btns">
-          <a class="btn btn--wa" target="_blank" href="https://wa.me/18092515727">WhatsApp</a>
-          <a class="btn" href="#reserva">Reservar</a>
-          <a class="btn btn--pay" href="pago.html">Pagar</a>
-        </div>
-      </div>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <img src="images/otros/logo.png" alt="Logo Rojo Cana">
+      <h1>Explora con Pasión, Vive Rojo Cana</h1>
+      <p>Sólo piénsalo… y nosotros te llevamos.</p>
     </div>
+    <nav class="nav">
+      <a href="index.html" class="btn">ES</a>
+      <a href="index_en.html" class="btn">EN</a>
+      <a href="#reserva" class="btn">Reservar</a>
+      <a href="https://wa.me/18092515727" class="btn whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a href="#pago" class="btn">Pagar</a>
+    </nav>
   </header>
 
-  <main>
+  <!-- Portada -->
+  <section class="hero" style="background-image: url('images/otros/fondo.jpg');">
+    <div class="overlay">
+      <h2>Transporte, Tours y Excursiones</h2>
+    </div>
+  </section>
 
-    <!-- TRANSFER -->
-    <section class="section" id="transfer">
-      <h2>Transfer</h2>
+  <!-- Quiénes somos -->
+  <section id="quienes" class="content">
+    <h2>Quiénes Somos</h2>
+    <p>En <strong>Services Travel Rojo Cana</strong> ofrecemos transporte confiable, tours y excursiones en toda República Dominicana. Nuestro compromiso es brindarte comodidad, seguridad y experiencias inolvidables en cada viaje.</p>
+  </section>
+
+  <!-- Visión y Misión -->
+  <section id="vision-mision" class="content">
+    <h2>Visión y Misión</h2>
+    <p><strong>Visión:</strong> Ser la empresa de transporte y excursiones más confiable y preferida de República Dominicana, reconocida por nuestro servicio personalizado.</p>
+    <p><strong>Misión:</strong> Facilitar el turismo seguro y accesible, ofreciendo experiencias auténticas que conecten a nuestros clientes con la cultura y belleza dominicana.</p>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="content">
+    <h2>Servicios Destacados</h2>
+
+    <!-- Transfer -->
+    <div class="galeria">
+      <h3>Transporte Ejecutivo y Privado</h3>
       <div class="slider">
-        <button class="slider__btn prev" aria-label="Anterior">‹</button>
-        <div class="slider__track">
-          <img src="images/transfer/transfer1.jpg" alt="Transfer 1">
-          <img src="images/transfer/transfer2.jpg" alt="Transfer 2">
-          <img src="images/transfer/transfer3.jpg" alt="Transfer 3">
-          <img src="images/transfer/transfer4.jpg" alt="Transfer 4">
-          <img src="images/transfer/transfer5.jpg" alt="Transfer 5">
-        </div>
-        <button class="slider__btn next" aria-label="Siguiente">›</button>
+        <img src="images/transfer/transfer1.jpg" alt="Vehículo ejecutivo frente al hotel">
+        <img src="images/transfer/transfer2.jpg" alt="Minibús para grupos en aeropuerto">
+        <img src="images/transfer/transfer3.jpg" alt="SUV privado en carretera">
+        <img src="images/transfer/transfer4.jpg" alt="Van ejecutiva en resort">
+        <img src="images/transfer/transfer5.jpg" alt="Servicio VIP en aeropuerto">
       </div>
-    </section>
+    </div>
 
-    <!-- BUGGY -->
-    <section class="section" id="buggy">
-      <h2>Buggy</h2>
+    <!-- Buggy -->
+    <div class="galeria">
+      <h3>Aventura en Buggy</h3>
       <div class="slider">
-        <button class="slider__btn prev" aria-label="Anterior">‹</button>
-        <div class="slider__track">
-          <img src="images/buggy/buggy1.jpg" alt="Buggy 1">
-          <img src="images/buggy/buggy2.jpg" alt="Buggy 2">
-          <img src="images/buggy/buggy3.jpg" alt="Buggy 3">
-          <img src="images/buggy/buggy4.jpg" alt="Buggy 4">
-          <img src="images/buggy/buggy5.jpg" alt="Buggy 5">
-        </div>
-        <button class="slider__btn next" aria-label="Siguiente">›</button>
+        <img src="images/buggy/buggy1.jpg" alt="Grupo de turistas en buggy">
+        <img src="images/buggy/buggy2.jpg" alt="Buggy cruzando río">
+        <img src="images/buggy/buggy3.jpg" alt="Pareja disfrutando buggy">
+        <img src="images/buggy/buggy4.jpg" alt="Buggy en arena">
+        <img src="images/buggy/buggy5.jpg" alt="Turista manejando buggy">
       </div>
-    </section>
+    </div>
 
-    <!-- SAONA -->
-    <section class="section" id="saona">
-      <h2>Isla Saona</h2>
+    <!-- Saona -->
+    <div class="galeria">
+      <h3>Excursión Isla Saona</h3>
       <div class="slider">
-        <button class="slider__btn prev" aria-label="Anterior">‹</button>
-        <div class="slider__track">
-          <img src="images/saona/saona1.jpg" alt="Saona 1">
-          <img src="images/saona/saona2.jpg" alt="Saona 2">
-          <img src="images/saona/saona3.jpg" alt="Saona 3">
-          <img src="images/saona/saona4.jpg" alt="Saona 4">
-          <img src="images/saona/saona5.jpg" alt="Saona 5">
-        </div>
-        <button class="slider__btn next" aria-label="Siguiente">›</button>
+        <img src="images/saona/saona1.jpg" alt="Playa virgen en Isla Saona">
+        <img src="images/saona/saona2.jpg" alt="Turistas disfrutando catamarán">
+        <img src="images/saona/saona3.jpg" alt="Cocoteros en la playa">
+        <img src="images/saona/saona4.jpg" alt="Piscina natural Saona">
+        <img src="images/saona/saona5.jpg" alt="Arena blanca y mar turquesa">
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- BOCA CHICA -->
-    <section class="section" id="boca-chica">
-      <h2>Boca Chica</h2>
-      <div class="slider">
-        <button class="slider__btn prev" aria-label="Anterior">‹</button>
-        <div class="slider__track">
-          <img src="images/boca_chica/boca1.jpg" alt="Boca Chica 1">
-          <img src="images/boca_chica/boca2.jpg" alt="Boca Chica 2">
-          <img src="images/boca_chica/boca3.jpg" alt="Boca Chica 3">
-          <img src="images/boca_chica/boca4.jpg" alt="Boca Chica 4">
-          <img src="images/boca_chica/boca5.jpg" alt="Boca Chica 5">
-        </div>
-        <button class="slider__btn next" aria-label="Siguiente">›</button>
-      </div>
-    </section>
+  <!-- Formulario de reservas -->
+  <section id="reserva" class="form-section">
+    <h2>Reserva tu Servicio</h2>
+    <form action="https://formspree.io/f/mqaknvwg" method="POST">
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <input type="email" name="email" placeholder="Tu correo" required>
+      <input type="tel" name="telefono" placeholder="Tu teléfono" required>
+      <input type="text" name="servicio" placeholder="Servicio solicitado" required>
+      <label>Fecha de llegada:</label>
+      <input type="date" name="fecha_llegada" required>
+      <label>Fecha de salida:</label>
+      <input type="date" name="fecha_salida" required>
+      <textarea name="mensaje" placeholder="Detalles adicionales"></textarea>
+      <button type="submit">Enviar Reserva</button>
+    </form>
+  </section>
 
-    <!-- BAHÍA DE LAS ÁGUILAS -->
-    <section class="section" id="bahia">
-      <h2>Bahía de las Águilas</h2>
-      <div class="slider">
-        <button class="slider__btn prev" aria-label="Anterior">‹</button>
-        <div class="slider__track">
-          <img src="images/bahia_de_las_aguilas/bahia1.jpg" alt="Bahía de las Águilas 1">
-          <img src="images/bahia_de_las_aguilas/bahia2.jpg" alt="Bahía de las Águilas 2">
-          <img src="images/bahia_de_las_aguilas/bahia3.jpg" alt="Bahía de las Águilas 3">
-          <img src="images/bahia_de_las_aguilas/bahia4.jpg" alt="Bahía de las Águilas 4">
-          <img src="images/bahia_de_las_aguilas/bahia5.jpg" alt="Bahía de las Águilas 5">
-        </div>
-        <button class="slider__btn next" aria-label="Siguiente">›</button>
-      </div>
-    </section>
-
-    <!-- VISIÓN / MISIÓN -->
-    <section class="section">
-      <div class="paneles">
-        <div class="panel">
-          <h3>Misión</h3>
-          <p>Ofrecer transporte y excursiones seguras, puntuales y personalizadas para disfrutar la belleza de República Dominicana.</p>
-        </div>
-        <div class="panel">
-          <h3>Visión</h3>
-          <p>Ser la empresa de referencia en transporte y tours en RD, reconocidos por calidad, confianza y hospitalidad.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- FORMULARIO -->
-    <section class="section" id="reserva">
-      <h2>Reserva ahora</h2>
-      <form id="form-reserva">
-        <input type="text" name="nombre" placeholder="Nombre completo" required />
-        <input type="email" name="email" placeholder="Correo electrónico" required />
-        <input type="tel" name="telefono" placeholder="Teléfono" required />
-        <input type="text" name="servicio" placeholder="Servicio solicitado" required />
-        <label>Fecha de llegada</label>
-        <input type="date" name="fecha_llegada" required />
-        <label>Fecha de salida</label>
-        <input type="date" name="fecha_salida" required />
-        <textarea name="mensaje" placeholder="Detalles (vuelo, hotel, personas)"></textarea>
-        <button type="submit" class="submit">Enviar por WhatsApp</button>
-      </form>
-      <p style="text-align:center;margin-top:8px;">¿Prefieres email? <a href="mailto:servicestravelrojo@gmail.com">servicestravelrojo@gmail.com</a></p>
-    </section>
-
-  </main>
-
-  <footer>
-    <p>© 2025 Services Travel Rojo Cana — República Dominicana</p>
-    <p>WhatsApp: <a href="https://wa.me/18092515727" target="_blank">+1 809 251 5727</a> · Instagram: <a href="https://instagram.com/st.rojocana" target="_blank">@st.rojocana</a></p>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Services Travel Rojo Cana. Todos los derechos reservados.</p>
+    <div class="social">
+      <a href="https://www.facebook.com/share/1BBfsBzYLF/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/st.rojocana" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/18092515727" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="mailto:servicestravelrojo@gmail.com"><i class="fa fa-envelope"></i></a>
+    </div>
   </footer>
-
-  <!-- JS: carrusel manual + WhatsApp -->
-  <script>
-    // Carrusel manual (sin autoplay)
-    document.querySelectorAll('.slider').forEach(slider => {
-      const track = slider.querySelector('.slider__track');
-      const prev = slider.querySelector('.prev');
-      const next = slider.querySelector('.next');
-      const step = 360; // px por “paso”
-      prev.addEventListener('click', () => track.scrollBy({left: -step, behavior:'smooth'}));
-      next.addEventListener('click', () => track.scrollBy({left:  step, behavior:'smooth'}));
-    });
-
-    // Envío rápido a WhatsApp
-    document.getElementById('form-reserva').addEventListener('submit', function(e){
-      e.preventDefault();
-      const d = new FormData(this);
-      const txt = [
-        "*Nueva reserva*",
-        "Nombre: " + d.get('nombre'),
-        "Email: " + d.get('email'),
-        "Teléfono: " + d.get('telefono'),
-        "Servicio: " + d.get('servicio'),
-        "Llegada: " + d.get('fecha_llegada'),
-        "Salida: " + d.get('fecha_salida'),
-        "Mensaje: " + (d.get('mensaje')||'')
-      ].join("%0A");
-      window.open("https://wa.me/18092515727?text="+txt,"_blank");
-    });
-  </script>
 
 </body>
 </html>
