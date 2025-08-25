@@ -1,198 +1,68 @@
-/* ================================
-   ESTILOS PRINCIPALES - ROJO CANA
-   ================================ */
-
+/* ======== ESTILOS GENERALES ======== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-  color: #333;
+  background: #fff;
+  color: #222;
   line-height: 1.6;
-  background: url("images/otros/fondo.jpg") no-repeat center center fixed;
-  background-size: cover;
 }
 
-/* ======= HEADER ======= */
-header {
-  background: rgba(255, 255, 255, 0.85);
-  padding: 20px;
+h1, h2, h3 {
+  font-weight: bold;
   text-align: center;
-  border-bottom: 4px solid #d60000; /* Rojo */
 }
 
-header img {
-  max-height: 80px;
+/* ======== PORTADA (FONDO) ======== */
+header {
+  background: url("images/otros/fondo.jpg") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+  text-align: center;
+  padding: 20px;
+}
+
+header img.logo {
+  max-width: 180px;
+  margin-bottom: 20px;
 }
 
 header h1 {
-  font-size: 1.8rem;
-  color: #004aad; /* Azul claro */
-  margin-top: 10px;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
 header p {
-  font-size: 1rem;
-  color: #008f39; /* Verde */
-  font-style: italic;
-}
-
-/* ======= NAVBAR ======= */
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin: 10px 0;
-}
-
-nav a {
-  text-decoration: none;
-  background: #004aad;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 20px;
-  transition: 0.3s;
-}
-
-nav a:hover {
-  background: #d60000; /* Rojo */
-}
-
-/* ======= SECCIONES ======= */
-section {
-  padding: 60px 20px;
-  background: rgba(255, 255, 255, 0.9);
-  margin: 20px auto;
-  max-width: 1200px;
-  border-radius: 15px;
-  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
-}
-
-section h2 {
-  text-align: center;
+  font-size: 1.2rem;
   margin-bottom: 20px;
-  color: #004aad;
-  font-size: 2rem;
 }
 
-/* ======= GALERÍAS (CARRUSELES) ======= */
-.carousel {
-  position: relative;
-  max-width: 900px;
-  margin: auto;
-  overflow: hidden;
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-}
-
-.carousel img {
-  width: 100%;
-  display: block;
-}
-
-.carousel-controls {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  transform: translateY(-50%);
-}
-
-.carousel-controls button {
-  background: rgba(0,0,0,0.5);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  font-size: 18px;
-  border-radius: 50%;
-}
-
-.carousel-controls button:hover {
-  background: #d60000;
-}
-
-/* ======= FORMULARIO ======= */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  max-width: 600px;
-  margin: auto;
-}
-
-form input,
-form textarea,
-form select {
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  width: 100%;
-}
-
-form button {
-  background: #004aad;
-  color: white;
-  padding: 15px;
-  border: none;
-  border-radius: 8px;
-  font-size: 1.1rem;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-form button:hover {
-  background: #d60000;
-}
-
-/* ======= BOTONES FLOTANTES ======= */
-.whatsapp-btn, .reserva-btn, .pago-btn {
-  position: fixed;
-  right: 20px;
-  z-index: 1000;
+/* ======== BOTONES ======== */
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  margin: 10px;
+  font-size: 1rem;
   border-radius: 50px;
-  padding: 15px 20px;
-  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
   font-weight: bold;
-  text-decoration: none;
   transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
-.whatsapp-btn {
-  bottom: 100px;
-  background: #25d366;
+.btn:hover {
+  transform: scale(1.05);
 }
 
-.reserva-btn {
-  bottom: 160px;
-  background: #004aad;
-}
-
-.pago-btn {
-  bottom: 220px;
-  background: #d60000;
-}
-
-.whatsapp-btn:hover,
-.reserva-btn:hover,
-.pago-btn:hover {
-  transform: scale(1.1);
-}
-
-/* ======= FOOTER ======= */
-footer {
-  text-align: center;
-  padding: 20px;
-  background: rgba(0,0,0,0.7);
-  color: white;
-  margin-top: 30px;
-}
-
-footer a {
-  color: #25d366;
-  text-decoration: none;
-}
+/* Colores bandera dominicana
