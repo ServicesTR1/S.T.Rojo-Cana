@@ -1,100 +1,186 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services Travel Rojo Cana transporte, tours y excursiones en RD</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services Travel Rojo Cana | Transporte, tours y excursiones en RD</title>
+
+  <meta name="description" content="Transporte privado, tours y excursiones en toda República Dominicana. Vive con pasión, Vive Rojo Cana... Piénsalo y nosotros te llevamos." />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="canonical" href="https://rojoCana.com/" />
+  <link rel="alternate" hreflang="en" href="index_en.html" />
+
+  <meta property="og:title" content="Services Travel Rojo Cana" />
+  <meta property="og:description" content="Transporte privado, tours y excursiones en RD." />
+  <meta property="og:image" content="images/otros/logo.png" />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="hero">
-    <img src="images/otros/logo.png" alt="Logo Rojo Cana" class="logo">
-    <h1 id="slogan">Explora con Pasión, Vive Rojo Cana</h1>
-    <p id="eslogan">Sólo piénsalo… y nosotros te llevamos.</p>
-    <!-- Idiomas -->
-    <div class="lang-switch">
-      <button onclick="setLanguage('es')"><img src="images/otros/es.png" alt="Español" width="30"></button>
-      <button onclick="setLanguage('en')"><img src="images/otros/en.png" alt="English" width="30"></button>
-    </div>
-    <div class="cta-buttons">
-      <a href="#formulario" class="btn">Reservar</a>
-      <a href="https://wa.me/18092515727" class="btn whatsapp">WhatsApp</a>
-      <a href="#pago" class="btn pay">Pagar</a>
+  <!-- HERO / PORTADA  (fondo solo aquí) -->
+  <header class="hero" style="background-image:url('images/otros/fondo.jpg')">
+    <div class="hero__overlay">
+      <div class="lang-switch">
+        <a class="flag" href="index.html" aria-label="Español">🇩🇴</a>
+        <a class="flag" href="index_en.html" aria-label="English">🇺🇸</a>
+      </div>
+
+      <img class="logo" src="images/otros/logo.png" alt="Logo Services Travel Rojo Cana" />
+
+      <h1 class="slogan">Vive con pasión, Vive Rojo Cana</h1>
+      <p class="sub-slogan">Piénsalo… y nosotros te llevamos.</p>
+
+      <div class="cta-row">
+        <a class="btn btn--dr-blue" href="#reserva">Reservar</a>
+        <a class="btn btn--wa" target="_blank" href="https://wa.me/18092515727">WhatsApp</a>
+        <a class="btn btn--dr-red" href="#contacto">Contacto</a>
+      </div>
     </div>
   </header>
 
-  <!-- GALERÍAS -->
-  <section id="transfer" class="galeria">
-    <h2>Transfer</h2>
-    <div class="carousel">
-      <img src="images/transfer/1.jpg" alt="Transfer 1">
-      <img src="images/transfer/2.jpg" alt="Transfer 2">
-      <img src="images/transfer/3.jpg" alt="Transfer 3">
-    </div>
-  </section>
+  <main>
 
-  <section id="buggy" class="galeria">
-    <h2>Buggies</h2>
-    <div class="carousel">
-      <img src="images/buggy/1.jpg" alt="Buggy 1">
-      <img src="images/buggy/2.jpg" alt="Buggy 2">
-    </div>
-  </section>
+    <!-- QUIÉNES SOMOS -->
+    <section class="section" id="quienes-somos">
+      <h2>Quiénes somos</h2>
+      <p>Somos Services Travel Rojo Cana: transporte privado, tours y excursiones por toda la República Dominicana, con puntualidad, seguridad y el trato cálido que mereces.</p>
+    </section>
 
-  <section id="saona" class="galeria">
-    <h2>Isla Saona</h2>
-    <div class="carousel">
-      <img src="images/saona/1.jpg" alt="Saona 1">
-      <img src="images/saona/2.jpg" alt="Saona 2">
-    </div>
-  </section>
+    <!-- VISIÓN / MISIÓN -->
+    <section class="section">
+      <div class="cards-2">
+        <article class="card">
+          <h3>Misión</h3>
+          <p>Ofrecer experiencias de transporte y excursiones seguras, cómodas y memorables, con atención personalizada para cada cliente.</p>
+        </article>
+        <article class="card">
+          <h3>Visión</h3>
+          <p>Ser la empresa de referencia en RD por calidad, confianza y hospitalidad, conectando a nuestros clientes con lo mejor del país.</p>
+        </article>
+      </div>
+    </section>
 
-  <!-- VISIÓN Y MISIÓN -->
-  <section id="vision-mision">
-    <h2>Visión</h2>
-    <p>Ser la empresa de transporte y excursiones líder en República Dominicana, reconocida por calidad, seguridad y pasión por el turismo.</p>
-    <h2>Misión</h2>
-    <p>Ofrecer experiencias inolvidables de viaje, conectando a nuestros clientes con los mejores destinos del país.</p>
-  </section>
+    <!-- TRANSFER (usa vehiculo1..vehiculo5.jpg) -->
+    <section class="section" id="transfer">
+      <h2>Transfer</h2>
+      <div class="slider">
+        <button class="slider__btn prev" aria-label="Anterior">‹</button>
+        <div class="slider__track">
+          <img src="images/transfer/vehiculo1.jpg" alt="Vehículo 1">
+          <img src="images/transfer/vehiculo2.jpg" alt="Vehículo 2">
+          <img src="images/transfer/vehiculo3.jpg" alt="Vehículo 3">
+          <img src="images/transfer/vehiculo4.jpg" alt="Vehículo 4">
+          <img src="images/transfer/vehiculo5.jpg" alt="Vehículo 5">
+        </div>
+        <button class="slider__btn next" aria-label="Siguiente">›</button>
+      </div>
+    </section>
 
-  <!-- FORMULARIO -->
-  <section id="formulario">
-    <h2>Reservar Servicio</h2>
-    <form id="reservaForm">
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" required>
-      
-      <label for="telefono">Teléfono:</label>
-      <input type="tel" id="telefono" name="telefono" required>
-      
-      <label for="correo">Correo:</label>
-      <input type="email" id="correo" name="correo" required>
+    <!-- BUGGY -->
+    <section class="section" id="buggy">
+      <h2>Buggy</h2>
+      <div class="slider">
+        <button class="slider__btn prev" aria-label="Anterior">‹</button>
+        <div class="slider__track">
+          <img src="images/buggy/buggy1.jpg" alt="Buggy 1">
+          <img src="images/buggy/buggy2.jpg" alt="Buggy 2">
+          <img src="images/buggy/buggy3.jpg" alt="Buggy 3">
+          <img src="images/buggy/buggy4.jpg" alt="Buggy 4">
+          <img src="images/buggy/buggy5.jpg" alt="Buggy 5">
+        </div>
+        <button class="slider__btn next" aria-label="Siguiente">›</button>
+      </div>
+    </section>
 
-      <label for="servicio">Servicio solicitado:</label>
-      <input type="text" id="servicio" name="servicio" required>
+    <!-- SAONA -->
+    <section class="section" id="saona">
+      <h2>Isla Saona</h2>
+      <div class="slider">
+        <button class="slider__btn prev" aria-label="Anterior">‹</button>
+        <div class="slider__track">
+          <img src="images/saona/saona1.jpg" alt="Saona 1">
+          <img src="images/saona/saona2.jpg" alt="Saona 2">
+          <img src="images/saona/saona3.jpg" alt="Saona 3">
+          <img src="images/saona/saona4.jpg" alt="Saona 4">
+          <img src="images/saona/saona5.jpg" alt="Saona 5">
+        </div>
+        <button class="slider__btn next" aria-label="Siguiente">›</button>
+      </div>
+    </section>
 
-      <label for="fecha_entrada">Fecha de llegada:</label>
-      <input type="date" id="fecha_entrada" name="fecha_entrada" required>
+    <!-- BOCA CHICA -->
+    <section class="section" id="boca-chica">
+      <h2>Boca Chica</h2>
+      <div class="slider">
+        <button class="slider__btn prev" aria-label="Anterior">‹</button>
+        <div class="slider__track">
+          <img src="images/boca_chica/boca1.jpg" alt="Boca Chica 1">
+          <img src="images/boca_chica/boca2.jpg" alt="Boca Chica 2">
+          <img src="images/boca_chica/boca3.jpg" alt="Boca Chica 3">
+          <img src="images/boca_chica/boca4.jpg" alt="Boca Chica 4">
+          <img src="images/boca_chica/boca5.jpg" alt="Boca Chica 5">
+        </div>
+        <button class="slider__btn next" aria-label="Siguiente">›</button>
+      </div>
+    </section>
 
-      <label for="fecha_salida">Fecha de salida:</label>
-      <input type="date" id="fecha_salida" name="fecha_salida">
+    <!-- BAHÍA DE LAS ÁGUILAS -->
+    <section class="section" id="bahia">
+      <h2>Bahía de las Águilas</h2>
+      <div class="slider">
+        <button class="slider__btn prev" aria-label="Anterior">‹</button>
+        <div class="slider__track">
+          <img src="images/bahia_de_las_aguilas/bahia1.jpg" alt="Bahía de las Águilas 1">
+          <img src="images/bahia_de_las_aguilas/bahia2.jpg" alt="Bahía de las Águilas 2">
+          <img src="images/bahia_de_las_aguilas/bahia3.jpg" alt="Bahía de las Águilas 3">
+          <img src="images/bahia_de_las_aguilas/bahia4.jpg" alt="Bahía de las Águilas 4">
+          <img src="images/bahia_de_las_aguilas/bahia5.jpg" alt="Bahía de las Águilas 5">
+        </div>
+        <button class="slider__btn next" aria-label="Siguiente">›</button>
+      </div>
+    </section>
 
-      <button type="submit" class="btn">Enviar</button>
-    </form>
-  </section>
+    <!-- RESERVA -->
+    <section class="section" id="reserva">
+      <h2>Reserva ahora</h2>
+      <form id="form-reserva">
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required />
+        <input type="email" id="email" name="email" placeholder="Correo electrónico" required />
+        <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" required />
+        <input type="text" id="servicio" name="servicio" placeholder="Servicio solicitado" required />
+        <label>Fecha de llegada</label>
+        <input type="date" id="fechaEntrada" name="fecha_llegada" required />
+        <label>Fecha de salida</label>
+        <input type="date" id="fechaSalida" name="fecha_salida" required />
+        <textarea id="mensaje" name="mensaje" placeholder="Detalles (vuelo, hotel, personas)"></textarea>
+        <div class="form-actions">
+          <button class="btn btn--dr-blue" type="submit">Enviar por WhatsApp + Email</button>
+        </div>
+      </form>
+    </section>
 
-  <!-- PIE DE PÁGINA -->
-  <footer>
-    <p>&copy; 2025 Services Travel Rojo Cana</p>
-    <div class="redes">
-      <a href="https://www.instagram.com/st.rojocana" target="_blank">Instagram</a>
-      <a href="https://www.facebook.com/ServicesTravelRojoCana" target="_blank">Facebook</a>
+    <!-- CONTACTO -->
+    <section class="section" id="contacto">
+      <h2>Contacto</h2>
+      <p>Email: <a href="mailto:servicestravelrojo@gmail.com">servicestravelrojo@gmail.com</a></p>
+      <p>WhatsApp: <a href="https://wa.me/18092515727" target="_blank">+1 809 251 5727</a></p>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 Services Travel Rojo Cana — Todos los derechos reservados</p>
+    <div class="socials">
+      <a href="https://instagram.com/st.rojocana" target="_blank" aria-label="Instagram" class="ico insta" title="Instagram"></a>
+      <a href="https://www.facebook.com/share/1BBfsBzYLF/" target="_blank" aria-label="Facebook" class="ico fb" title="Facebook"></a>
+      <a href="mailto:servicestravelrojo@gmail.com" aria-label="Email" class="ico mail" title="Correo"></a>
+      <a href="https://wa.me/18092515727" target="_blank" aria-label="WhatsApp" class="ico wa" title="WhatsApp"></a>
     </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
-        </html>
+            </html>
