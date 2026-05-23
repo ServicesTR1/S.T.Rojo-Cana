@@ -27,8 +27,8 @@
     --borde-input: #dddddd;
 }
 
-/* Variables dinámicas para el Modo Oscuro */
-[data-theme="dark"] {
+/* Variables dinámicas para el Modo Oscuro vinculadas a la clase del JavaScript */
+body.dark-mode {
     --bg-principal: #121212;
     --bg-topbar: #1e1e1e;
     --bg-panel: #1e1e1e;
@@ -299,6 +299,7 @@ textarea {
     border: 1px solid var(--borde-input);
     background: var(--bg-principal);
     color: var(--texto-principal);
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 textarea {
@@ -342,7 +343,7 @@ textarea {
 }
 
 /* Filtro sutil para que los iconos de redes sociales resalten bien en fondos oscuros */
-[data-theme="dark"] .icon {
+body.dark-mode .icon {
     filter: brightness(1.1) grayscale(0%);
 }
 
@@ -379,49 +380,4 @@ textarea {
     .brand {
         display: none;
     }
-}
-/* =======================================================
-   PEGA ESTO AL FINAL DE TU ARCHIVO PARA EL MODO OSCURO
-   ======================================================= */
-
-/* Cambia el fondo de la pantalla a negro y las letras a blanco */
-body.dark-mode {
-    background-color: #121212 !important;
-    color: #ffffff !important;
-}
-
-/* Cambia el fondo de las secciones de la página */
-body.dark-mode .section {
-    background-color: #1a1a1a !important;
-    color: #ffffff !important;
-}
-
-/* Cambia el fondo de la barra superior (donde está el botón) */
-body.dark-mode .topbar {
-    background-color: #1a1a1a !important;
-    color: #ffffff !important;
-    border-bottom: 1px solid #333333 !important;
-}
-
-/* Cambia los bloques de los carruseles y de Misión/Visión */
-body.dark-mode .panel, 
-body.dark-mode .carousel-block {
-    background-color: #242424 !important;
-    color: #ffffff !important;
-    border: 1px solid #333333 !important;
-}
-
-/* Asegura que todos los textos y párrafos se lean bien en lo oscuro */
-body.dark-mode p, 
-body.dark-mode .desc, 
-body.dark-mode .lead,
-body.dark-mode h1,
-body.dark-mode h2,
-body.dark-mode h3 {
-    color: #ffffff !important;
-}
-
-/* El pie de página se vuelve un negro más profundo */
-body.dark-mode .footer {
-    background-color: #0d0d0d !important;
 }
