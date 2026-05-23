@@ -1,6 +1,32 @@
 // ===== Año dinámico en footer
 document.getElementById('year').textContent = new Date().getFullYear();
 
+// ===== Botón Modo Claro / Oscuro (NUEVO)
+const themeToggleBtn = document.getElementById('theme-toggle');
+if (themeToggleBtn) {
+  // Comprobar si el usuario ya tenía una preferencia guardada de antes
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'dark') {
+    document.body.classList.add('dark-mode');
+    themeToggleBtn.textContent = '☀️'; // Cambia a Sol si está oscuro
+  } else {
+    themeToggleBtn.textContent = '🌙'; // Luna si está claro
+  }
+
+  // Escuchar el clic para alternar los modos
+  themeToggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    
+    if (document.body.classList.contains('dark-mode')) {
+      themeToggleBtn.textContent = '☀️';
+      localStorage.setItem('theme', 'dark'); // Guarda la elección
+    } else {
+      themeToggleBtn.textContent = '🌙';
+      localStorage.setItem('theme', 'light'); // Guarda la elección
+    }
+  });
+}
+
 // ===== Carrusel manual (sin autoplay)
 document.querySelectorAll('.slider').forEach(slider => {
   const track = slider.querySelector('.slider__track');
@@ -13,7 +39,8 @@ document.querySelectorAll('.slider').forEach(slider => {
 });
 
 // ===== Formulario -> WhatsApp
-const form = document.getElementById('form-reserva');
+// Nota: En tu HTML tienes id="payment-form", asegúrate de cambiarlo si usas "form-reserva"
+const form = document.getElementById('form-reserva') || document.getElementById('payment-form');
 if (form){
   form.addEventListener('submit', function(e){
     e.preventDefault();
