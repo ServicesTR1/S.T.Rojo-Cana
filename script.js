@@ -1,7 +1,8 @@
 // ===== Año dinámico en footer
-document.getElementById('year').textContent = new Date().getFullYear();
+const yearEl = document.getElementById('year');
+if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-// ===== Botón Modo Claro / Oscuro (NUEVO)
+// ===== Botón Modo Claro / Oscuro
 const themeToggleBtn = document.getElementById('theme-toggle');
 if (themeToggleBtn) {
   // Comprobar si el usuario ya tenía una preferencia guardada de antes
@@ -27,19 +28,20 @@ if (themeToggleBtn) {
   });
 }
 
-// ===== Carrusel manual (sin autoplay)
+// ===== Carrusel manual protegido (No romperá el script si no existe en el HTML)
 document.querySelectorAll('.slider').forEach(slider => {
   const track = slider.querySelector('.slider__track');
   const prev  = slider.querySelector('.prev');
   const next  = slider.querySelector('.next');
   const step  = 360; // px por clic
 
-  prev.addEventListener('click', () => track.scrollBy({left: -step, behavior: 'smooth'}));
-  next.addEventListener('click', () => track.scrollBy({left:  step, behavior: 'smooth'}));
+  if (track && prev && next) {
+    prev.addEventListener('click', () => track.scrollBy({left: -step, behavior: 'smooth'}));
+    next.addEventListener('click', () => track.scrollBy({left:  step, behavior: 'smooth'}));
+  }
 });
 
 // ===== Formulario -> WhatsApp
-// Nota: En tu HTML tienes id="payment-form", asegúrate de cambiarlo si usas "form-reserva"
 const form = document.getElementById('form-reserva') || document.getElementById('payment-form');
 if (form){
   form.addEventListener('submit', function(e){
@@ -125,6 +127,7 @@ const dict = {
 function setLang(lang){
   document.body.setAttribute('data-lang', lang);
   const t = dict[lang];
+  if (!t) return;
 
   // Textos comunes
   document.querySelectorAll('[data-i18n]').forEach(el=>{
@@ -137,9 +140,13 @@ function setLang(lang){
     if (t[k]) el.setAttribute('placeholder', t[k]);
   });
 }
-setLang(document.body.getAttribute('data-lang') || 'es');
 
-// Botones de idioma
-document.querySelectorAll('[data-lang-btn]').forEach(btn=>{
-  btn.addEventListener('click', ()=> setLang(btn.getAttribute('data-lang-btn')));
+// Inicialización segura del idioma
+document.addEventListener('DOMContentLoaded', () => {
+  setLang(document.body.getAttribute('data-lang') || 'es');
+
+  // Botones de idioma
+  document.querySelectorAll('[data-lang-btn]').forEach(btn=>{
+    btn.addEventListener('click', ()=> setLang(btn.getAttribute('data-lang-btn')));
+  });
 });
